@@ -32,10 +32,7 @@
     flex:0 0 1;
 }
 
-.place-space{
-    height: 99rpx;
-    width: 100%;
-}
+
 
 /* 轮播图start */
 .home-banner{
@@ -145,9 +142,8 @@
     height: 250rpx;
     overflow: hidden;
     display:flex;
-justify-content:center;
-align-items:center;
-
+    justify-content:center;
+    align-items:center;
 }
 
 .home-double-col .container .item image{

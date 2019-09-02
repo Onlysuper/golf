@@ -24,32 +24,16 @@
     </view>
    <!-- 选项栏目 -->
    <view class="page-block home-gride">
-        <view class="item">
-            <navigator open-type="navigateTo" url="/pages/court/court">
-                <view class="pic-box">
-                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                </view>
-                <text>订场</text>
-            </navigator>
-        </view>
-        <view class="item">
-            <view class="pic-box">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+        <block wx:for="{{grideList}}">
+            <view class="item">
+                <navigator open-type="navigateTo" url="{{item.url}}">
+                    <view class="pic-box">
+                        <image class="img" mode="aspectFit" src="{{item.icon}}"></image>
+                    </view>
+                    <text>{{item.label}}</text>
+                </navigator>
             </view>
-            <text>订场</text>
-        </view>
-        <view class="item">
-                <view class="pic-box">
-                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                </view>
-                <text>订场</text>
-            </view>
-        <view class="item">
-            <view class="pic-box">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-            </view>
-            <text>订场</text>
-        </view>
+        </block>
    </view>
    <!-- 热门 -->
    <view class="page-block home-block">

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    courtTop:""
   },
 
   /**
@@ -67,5 +67,17 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onPageScroll:function(e){
+    let scrollTop=e.scrollTop;
+    if(scrollTop&&scrollTop>300){
+      this.setData({
+        courtTop:'court-top-short'
+      })
+    }else{
+      this.setData({
+        courtTop:''
+      })
+    }
   }
 })

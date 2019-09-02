@@ -5,11 +5,18 @@
     padding-right: 20rpx;
     box-sizing: border-box;
 }
+.place-space{
+    height: 99rpx;
+    width: 100%;
+}
 /* 大标题 */
 .page-title{
     font-size:32rpx;
     line-height: 88rpx;
     font-weight: bold;
+}
+.m-border-bottom-1px{
+    border-bottom: 1px solid #c8c7cc;
 }
 /* 文字尺寸 */
 .m-font-size-sm{font-size:24rpx}

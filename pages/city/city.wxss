@@ -1,0 +1,151 @@
+/* pages/city/city.wxss */
+page{height:100%;}
+.city-top-fixed{ 
+   position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 200rpx;
+  background: #fff;
+  z-index: 99;
+}
+.city-top-place{
+  height: 200rpx;
+  width: 100%;
+} 
+.search-box{
+  flex: 0 0 99rpx;
+}
+.tab-box{
+  flex:0 0 99rpx;
+}
+.city-page{
+  height:100%;
+  /* display: flex;
+  flex-direction: column; */
+}
+.city-container{
+  height: 100%;
+}
+.city-page .tab-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.city-page .tab-box .item{
+    flex:1;
+    text-align: center;
+    font-size: 32rpx;
+}
+
+/* 列表开始 */
+.city_box{
+    height:100%;
+    background: #fff;
+    display: flex;
+  }
+  .city_left{
+    flex: 1;
+  }
+  .city_right{
+    width: 60rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .letter_item{
+    flex: 1;
+    display: block;
+    font-size: 24rpx;
+    color: #33B9FF;
+    text-align: center;
+  }
+  .city_locate,.national{
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1px solid #efefef;
+    font-size: 28rpx;
+    color: #333;
+    padding-left: 25rpx;
+  }
+  .city_locate_title{
+    color: #999;
+    margin-right: 20rpx;
+  }
+  .new_city{
+    background: #efefef;
+    font-size: 28rpx;
+  }
+  .new_city_title{
+    line-height: 50rpx;
+    color: #999;
+    padding-left: 25rpx;
+    margin-bottom: 20rpx;
+  }
+  .new_city_box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .new_city_text{
+    width: 200rpx;
+    text-align: center;
+    line-height: 70rpx;
+    background: #fff;
+    border-radius: 35rpx;
+    margin:0 0 22rpx 22rpx;
+  }
+  .city_first_letter{
+    line-height: 40rpx;
+    height: 40rpx;
+    padding-left: 25rpx;
+    font-size: 28rpx;
+    background: #eee;
+    color: #999;
+  }
+  .city_name{
+    display: block;
+    line-height: 80rpx;
+    height: 80rpx;
+    border-bottom: 1px solid #efefef;
+    font-size: 28rpx;
+    color: #333;
+    padding-left: 25rpx;
+  }
+/* 列表结束 */
+
+/* 国家start */
+.country-container .container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #f8f8f8;
+  height: 100%;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+.country-container .container .left{
+  flex:0 0 1;
+}
+.country-container .container .left .list .item{
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.country-container .container .left .list .item.active{
+  color:#007aff;
+  background: #fff;
+}
+.country-container .container .right{
+  flex:1;
+  background: #fff;
+}
+.country-container .container .right .item{
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+/* 国家end */

@@ -1,0 +1,44 @@
+.search-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 99rpx;
+    z-index: 100;
+    width: 100%;
+}
+
+.search-box .input-box{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.search-box .input-box .icon{
+    flex: 0 0 50rpx;
+}
+.search-box .input-box input{
+    flex: 1;
+}
+.tab-row{
+    height: 99rpx;
+    line-height: 99rpx;
+}
+.page-block{
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    box-sizing: border-box;
+}
+.place-space{
+    height: 99rpx;
+    width: 100%;
+}
+/* 大标题 */
+.page-title{
+    font-size:32rpx;
+    line-height: 88rpx;
+    font-weight: bold;
+}

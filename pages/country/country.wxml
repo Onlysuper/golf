@@ -1,0 +1,25 @@
+<!--pages/city/city.wxml-->
+<view class="city-page m-font-size-base m-text-color">
+        <view class="search-box page-block">
+            <view class="back">返回</view>
+            <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
+                <icon class="icon" size="15" type="search" />
+                <input placeholder="请输入球场名称"/>
+            </view>
+        </view>
+        <view class="tab-box tab-row">
+            <view class="item">
+                国内
+            </view>
+            <view class="item" bindtap="countryUrl">
+                国际/地区
+            </view>
+        </view>
+        <!-- 国家开始 -->
+        <view class="city-container">
+            <citylist styles='height:100%;' bindcitytap='cityTap'></citylist>
+        </view>
+        <!-- 国家结束 -->
+    
+    </view>
+    

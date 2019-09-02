@@ -9,13 +9,13 @@
             </view>
         </view>
         <view class="tab-box">
-            <view class="item local">
+            <view class="item local" bindtap="localUrl">
                 <view class="m-text-color-placeholder">区域</view>
                 <view class="line-split">北京</view>
             </view>
-            <view class="item date">
+            <view class="item date" bindtap="openDialog">
                 <view class="m-text-color-placeholder">开球日期</view>
-                <view>9月25日 周三</view>
+                <view>{{date.month}}月{{date.day}}日 周{{date.week}}</view>
             </view>
         </view>
         <view class="order-box m-text-color-placeholder">
@@ -25,6 +25,7 @@
         </view>
    </view>
    <view class="place-space-top"></view>
+
     <view class="list-box page-block">
        <view class="item m-border-bottom-1px">
             <view class="pic">
@@ -171,4 +172,35 @@
                 </view>
             </view>
     </view>
+
+    <!-- 日历弹出框start -->
+    <view class="weui-demo-dialog {{istrue ? 'weui-demo-dialog_show' : ''}}" catchtouchmove="true">
+        <view class="weui-mask" bindtap="closeDialog"></view>
+        <view class="weui-half-screen-dialog" catchtap="stopEvent">
+            <view class="weui-half-screen-dialog__hd">
+            <view class="weui-half-screen-dialog__hd__side">
+                <view bindtap="closeDialog" class="weui-icon-btn weui-icon-btn_close">关闭</view>
+            </view>
+            <view class="weui-half-screen-dialog__hd__main">
+                <text class="weui-half-screen-dialog__title">选择日期</text>
+                <!-- <text class="weui-half-screen-dialog__subtitle">标题</text> -->
+            </view>
+            <view class="weui-half-screen-dialog__hd__side">
+                <view class="weui-icon-btn weui-icon-btn_more">更多</view>
+            </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd">
+            <!-- 日历 -->
+            <scroll-view scroll-y style="height: 250px;">
+                <view class="calendar-box">
+                    <!-- <view class="title">2019年9月</view> -->
+                    <calendar calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
+                    <!-- <view class="title">2019年10月</view> -->
+                    <!-- <calendar calendarConfig="{{calendarConfig2}}"  bind:afterTapDay="afterTapDay"></calendar> -->
+                </view>
+            </scroll-view>
+            </view>
+        </view>
+    </view>
+    <!-- 日历弹出框end -->
 </view>

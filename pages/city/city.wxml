@@ -1,0 +1,63 @@
+<!--pages/city/city.wxml-->
+<view class="city-page m-font-size-base m-text-color">
+    <view class="city-top-fixed">
+        <view class="search-box page-block">
+            <view class="back">返回</view>
+            <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
+                <icon class="icon" size="15" type="search" />
+                <input placeholder="请输入球场名称"/>
+            </view>
+        </view>
+        <view class="tab-box tab-row">
+            <view class="item">
+                国内
+            </view>
+            <view class="item">
+                国际/地区
+            </view>
+        </view>
+    </view>
+    <view class="city-top-place"></view>
+    <!-- 城市列表开始 -->
+    <!-- <view class="city-container">
+        <citylist styles='height:100%;' bindcitytap='cityTap'></citylist>
+    </view> -->
+    <!-- 城市结束 -->
+    <!-- 国家开始 -->
+    <view class="city-container country-container">
+        <scroll-view scroll-y style='width:100%;height:100%;' scroll-with-animation>
+            <view class="container">
+                <view class="left">
+                    <view class="list">
+                        <view class="item ">
+                            美国
+                        </view>
+                        <view class="item active">
+                            泰国
+                        </view>
+                        <view class="item">
+                            新加坡
+                        </view>
+                    </view>
+                </view>
+                <view class="right">
+                    <scroll-view scroll-y style='width:100%;height:100%;' scroll-with-animation>
+                            <view class="list">
+                                <view class="item">
+                                    美国
+                                </view>
+                                <view class="item">
+                                    泰国
+                                </view>
+                                <view class="item">
+                                    新加坡
+                                </view>
+                            </view>
+                    </scroll-view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 国家结束 -->
+
+</view>

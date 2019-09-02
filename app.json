@@ -4,7 +4,9 @@
     "pages/search/index",
     "pages/logs/index",
     "pages/user/index",
-    "pages/court/court"
+    "pages/court/court",
+    "pages/city/city",
+    "pages/country/country"
   ],
   "tabBar": {
     "list": [

@@ -1,20 +1,7 @@
+@import 'style/weui.wxss';
+@import 'style/global/global.wxss';
 
 
-.page-block{
-    padding-left: 20rpx;
-    padding-right: 20rpx;
-    box-sizing: border-box;
-}
-.place-space{
-    height: 99rpx;
-    width: 100%;
-}
-/* 大标题 */
-.page-title{
-    font-size:32rpx;
-    line-height: 88rpx;
-    font-weight: bold;
-}
 .m-border-bottom-1px{
     border-bottom: 1px solid #c8c7cc;
 }
@@ -33,6 +20,7 @@
 
 /* 行为相关颜色 */
 .m-color-price{ color:#dd524d}
+.m-color-active{ color:#007aff}
 .m-color-primary{ color:#007aff}
 .m-color-success{ color:#f3a2cc}
 .m-color-warning{ color:#f0ad4e}
@@ -109,3 +97,5 @@
 .m-font-size-subtitle{36rpx}
 .m-color-paragraph{ color:#3F536E} // 文章段落颜色
 .m-font-size-paragraph{30rpx} */ 
+
+

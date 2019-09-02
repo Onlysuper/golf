@@ -56,6 +56,8 @@ Page({
   onLoad: function () {
   
   },
+
+  //跳转到搜索
   search(){
     wx.navigateTo({
       url:"/pages/search/index"

@@ -1,5 +1,8 @@
 /* pages/court/court.wxss */
-
+/* @import 'style.widget.weui-button.weui-button.wxss'; */
+/* .overhidden{
+    overflow: hidden;
+} */
 .court-top{
     top: 0;
     left: 0;
@@ -90,6 +93,9 @@
 
 
 /* 列表 */
+.list-box{
+    /* background:red; */
+}
 .list-box .item{
     display: flex;
     flex-direction: row;
@@ -111,3 +117,35 @@
     flex:1;
     padding-left: 20rpx;
 }
+
+/* 日历 */
+.calendar-box{
+    background: #fff;
+    height: 650rpx
+}
+.calendar-box .title{
+    font-size:32rpx;
+    line-height: 88rpx;
+    text-align: center;
+}
+
+
+/* 日历弹出框start */
+.weui-demo-dialog{
+visibility:hidden;
+opacity:0;
+transition:all .3s;
+}
+.weui-half-screen-dialog{
+transition:all .3s;
+transform:translateY(100%);
+}
+.weui-demo-dialog_show{
+visibility:visible;
+opacity:1;
+}
+.weui-demo-dialog_show .weui-half-screen-dialog{
+    transform:translateY(0);
+}
+  
+/* 日历弹出框end */

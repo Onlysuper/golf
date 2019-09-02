@@ -1,0 +1,177 @@
+<view class="home-page m-font-size-base m-text-color">
+    <!-- 搜索栏 -->
+    <view class="page-block home-search m-bg-color">
+        <view class="city">北京</view>
+        <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
+            <icon class="icon" size="15" type="search" />
+            <input placeholder="请输入球场名称"/>
+        </view>
+        <view class="phone">
+            <icon type="download" />
+        </view>
+    </view>
+    <view class="place-space"></view>
+    <!-- 轮播图 -->
+    <view class="page-block home-banner">
+        <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+            <image src="{{item}}" class="slide-image m-border-radius-lg" height="150"/>
+            </swiper-item>
+        </block>
+        </swiper>
+    </view>
+   <!-- 选项栏目 -->
+   <view class="page-block home-gride">
+        <view class="item">
+            <navigator open-type="navigateTo" url="/pages/court/court">
+                <view class="pic-box">
+                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                </view>
+                <text>订场</text>
+            </navigator>
+        </view>
+        <view class="item">
+            <view class="pic-box">
+                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+            </view>
+            <text>订场</text>
+        </view>
+        <view class="item">
+                <view class="pic-box">
+                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                </view>
+                <text>订场</text>
+            </view>
+        <view class="item">
+            <view class="pic-box">
+                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+            </view>
+            <text>订场</text>
+        </view>
+   </view>
+   <!-- 热门 -->
+   <view class="page-block home-block">
+        <view class="page-title">限时抢购</view>
+        <view class="hot-scrow">
+            <swiper interval="{{interval}}" circular="true" duration="{{duration}}"  previous-margin="50rpx" next-margin="50rpx">
+            <block wx:for="{{hotCourts}}">
+                <swiper-item class="m-item">
+                    <image src="{{item.img}}" class="slide-image m-border-radius-lg"/>
+                    <view class="text">
+                        <view class="box">
+                            <view class="label">{{item.title}}</view>
+                            <view class="content m-font-size-sm m-text-color-placeholder">{{item.content}}</view>
+                        </view>
+                        <view class="price">
+                            <text class="tip m-bg-color-grey m-color-price m-font-size-lg m-border-radius-lg">¥2688</text>
+                        </view>
+                    </view>
+                </swiper-item>
+            </block>
+            </swiper>
+        </view>
+   </view>
+   <!-- 双排列表 -->
+   <view class="page-block home-double-col">
+        <view class="page-title">特卖汇</view>
+        <view class="container">
+            <view class="item">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="text m-spacing-base">
+                        <view class="label">加州宝兴</view>
+                        <view class="describle  m-font-size-sm m-text-color-placeholder">加州宝兴</view>
+                        <view class="price">
+                            <text class="now m-color-price">¥710</text>
+                            <text class="old m-text-color-grey">¥990</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="item">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="text m-spacing-base">
+                        <view class="label">加州宝兴</view>
+                        <view class="describle  m-font-size-sm m-text-color-placeholder">加州宝兴</view>
+                        <view class="price">
+                            <text class="now m-color-price">¥710</text>
+                            <text class="old m-text-color-grey">¥990</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="item">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="text m-spacing-base">
+                        <view class="label">加州宝兴</view>
+                        <view class="describle  m-font-size-sm m-text-color-placeholder">加州宝兴</view>
+                        <view class="price">
+                            <text class="now m-color-price">¥710</text>
+                            <text class="old m-text-color-grey">¥990</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="item">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="text m-spacing-base">
+                        <view class="label">加州宝兴</view>
+                        <view class="describle  m-font-size-sm m-text-color-placeholder">加州宝兴</view>
+                        <view class="price">
+                            <text class="now m-color-price">¥710</text>
+                            <text class="c m-text-color-grey">¥990</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+
+        </view>
+   </view>
+   <view class="page-block home-hot-sell">
+        <view class="page-title">热销会籍</view>
+        <view class="item">
+            <view class="item-title"><navigator open-type="navigateTo" url="/pages/search/index">深圳云海谷</navigator></view>
+            <view class="pro">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="content">
+                        <view class="label m-font-size-lg">36度假会籍</view>
+                        <view class="text">
+                            <text class="tip m-color-price m-bg-color-active">新会籍</text>
+                        </view>
+                        <view class="text">推广价：<text class="price m-color-price">双提名/6.8万元</text></view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="pro">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="content">
+                        <view class="label m-font-size-lg">36度假会籍</view>
+                        <view class="text">
+                            <text class="tip m-color-price m-bg-color-active">新会籍</text>
+                        </view>
+                        <view class="text">推广价：<text class="price m-color-price">双提名/6.8万元</text></view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+   </view>
+</view>

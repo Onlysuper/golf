@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "mcell":   "/components/MCell/MCell"
+  }
+}

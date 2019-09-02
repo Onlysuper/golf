@@ -1,0 +1,6 @@
+<!--components/MCell/MCell.wxml-->
+<view class="m-cell">
+  <view class="icon"></view>
+  <view>{{title}}</view>
+  <view hidden="{{link}}" class='link'>></view>
+</view>

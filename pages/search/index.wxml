@@ -1,0 +1,13 @@
+<!--pages/search/index.wxml-->
+<view class="search-page">
+    <view class="home-search m-font-size-base m-bg-color">
+        <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
+            <icon class="icon" size="15" type="search" />
+            <input focus="{{autoFocus}}" confirm-type="search" type='text' placeholder="请输入球场名称"/>
+        </view>
+        <view class="but">
+            取消
+        </view>
+    </view>
+</view>
+

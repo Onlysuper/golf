@@ -1,0 +1,7 @@
+<!--pages/user/index.wxml-->
+<view>
+<block wx:for="{{menulist}}">
+    <mcell title="{{item.title}}" link="{{item.link}}"></mcell>
+</block>
+</view>
+

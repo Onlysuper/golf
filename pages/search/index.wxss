@@ -1,0 +1,32 @@
+/* pages/search/index.wxss */
+
+.home-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 99rpx;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.home-search .input-box{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.home-search .input-box .icon{
+    flex: 0 0 50rpx;
+}
+.home-search .input-box input{
+    flex: 1;
+}
+
+.home-search .but{
+    flex:0 0 1;
+}

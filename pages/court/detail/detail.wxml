@@ -1,11 +1,63 @@
 <!--pages/court/detail/detail.wxml-->
-<view class="court-detail">
-    <view class="main-img">
-            <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+<view class="court-detail m-font-size-base m-text-color">
+    <view class="header m-bg-color page-block">
+        <view class="main-img">
+            <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+        </view>
+        <view class="local-box">
+            <text class="m-font-size-lg">北京宝兴c场</text>
+            <text class="icon"><text class="iconfont icon-dingwei m-color-price"></text></text>
+        </view>
     </view>
-    <view class="local">
-        <text>北京宝兴c场</text>
-        <text class="icon"></text>
+    <view class="m-font-size-base m-bg-color chose-time">
+        <text class="m-font-size-lg">打球日期选择</text>
+        <text class="m-font-size-lg m-color-price">9月6日(后天) <text class="iconfont icon-gengduo"></text></text>
     </view>
-
+    <view class="time-interval m-font-size-base m-bg-color ">
+        <view class="page-block item time">时段 10:00-12:30</view>
+        <view class="page-block item specs m-text-color-placeholder m-font-size-sm">18洞果邻|1对2球童|1对2球车|柜</view>
+        <view class="page-block item payway">
+            <text class="m-border-all-1px m-text-color-placeholder m-font-size-sm">全款预付</text>
+        </view>
+        <view class="price-box">
+            <view class="page-block item m-border-bottom-1px">
+                <text class="label m-text-color-placeholder m-font-size-base">会员价</text>
+                <text class="price m-color-price m-font-size-lg">¥980</text>
+                <view class="but-box">
+                    <view class="but m-font-size-sm">预订</view>
+                </view>
+            </view>
+            <view class="page-block item">
+                <text class="label m-text-color-placeholder m-font-size-base">会员价</text>
+                <text class="price m-color-price m-font-size-lg">¥980</text>
+                <view class="but-box">
+                    <view class="but m-font-size-sm">预订</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="time-interval m-font-size-base m-bg-color ">
+        <view class="page-block item time">时段 10:00-12:30</view>
+        <view class="page-block item specs m-text-color-placeholder m-font-size-sm">18洞果邻|1对2球童|1对2球车|柜</view>
+        <view class="page-block item payway">
+            <text class="m-border-all-1px m-text-color-placeholder m-font-size-sm">全款预付</text>
+        </view>
+        <view class="price-box">
+            <view class="page-block item m-border-bottom-1px">
+                <text class="label m-text-color-placeholder m-font-size-base">会员价</text>
+                <text class="price m-color-price m-font-size-lg">¥980</text>
+                <view class="but-box">
+                    <view class="but m-font-size-sm">预订</view>
+                </view>
+            </view>
+            <view class="page-block item">
+                <text class="label m-text-color-placeholder m-font-size-base">会员价</text>
+                <text class="price m-color-price m-font-size-lg">¥980</text>
+                <view class="but-box">
+                    <view class="but m-font-size-sm">预订</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    
 </view>

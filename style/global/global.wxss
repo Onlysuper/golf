@@ -28,9 +28,13 @@
     line-height: 99rpx;
 }
 .page-block{
-    padding-left: 20rpx;
-    padding-right: 20rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
     box-sizing: border-box;
+}
+.page-margin-border-base{
+    margin-left: 30rpx;
+    margin-right: 30rpx;
 }
 .place-space{
     height: 99rpx;

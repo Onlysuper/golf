@@ -225,7 +225,9 @@
 }
 /* 认证会员按钮 */
 .vip-container{
-    margin:20rpx;
+    /* margin:30rpx; */
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
     border-radius: 12rpx;
     overflow:hidden;
 }

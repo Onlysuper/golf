@@ -8,6 +8,9 @@ page{
 .m-border-bottom-1px{
     border-bottom: 1px solid #eee;
 }
+.m-border-all-1px{
+    border: 1px solid #eee;
+}
 /* 轻灰色分割线 */
 .m-border-bottom-1pxl{
     border-bottom: 1px solid #f8f8f8;

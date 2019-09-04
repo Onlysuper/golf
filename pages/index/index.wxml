@@ -36,7 +36,7 @@
         </block>
     </view>
     <!-- 认证会员 -->
-    <view class="vip-container m-bg-color m-top-base">
+    <view class="vip-container page-margin-border-base m-bg-color m-top-base">
         <view class="content">
             <view class="label m-font-size-lg">会员身份预订！</view>
             <view>享受更多权益、优惠</view>
@@ -48,8 +48,8 @@
         <view class="page-title">
             <text>最新活动</text>
             <view class="icon-r m-text-color-placeholder">
-                <text>更多</text>
-                <text class="iconfont icon-gengduo"></text>
+                <text class="item">更多</text>
+                <text class="item-r" class="iconfont icon-gengduo"></text>
             </view>
         </view>
         <view class="item">

@@ -57,17 +57,19 @@
     flex-direction: row;
     text-align: center;
     flex-wrap:wrap;
-    padding:  24rpx 0;
+    padding-top:  20rpx;
+    padding-bottom:  20rpx;
 }
 .home-gride .item{
     display: flex;
     flex-direction: column;
     min-width: 25%;
     flex: 0 0 25%;
-    box-sizing: border-box;
-    /* margin-bottom: 24rpx; */
+    /* box-sizing: border-box; */
+    
+   
 }
-.home-gride .item .navigator{
+.home-gride .item navigator{
     padding: 16rpx;
 }
 .home-gride .item .pic-box{

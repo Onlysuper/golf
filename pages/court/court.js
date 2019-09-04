@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    currentCity:'北京',//当前所在城市
     currentTab: 0,
     orderLeft:'',
     courtList:[
@@ -109,7 +110,6 @@ Page({
     query.select('.tabTrue').boundingClientRect()
     query.exec(function (res) {
      let halfWidth = Math.round(res[0].width)/2;
-     console.log(halfWidth);
      let orderLeft=  Math.round(res[0].left)+halfWidth-15
      _this.setData({
       orderLeft:orderLeft
@@ -234,7 +234,6 @@ Page({
   },
   onPageScroll: tool._throttle(function(e){
     let scrollTop=e.scrollTop;
-    console.log(scrollTop);
     if(scrollTop&&scrollTop>300){
       this.setData({
         courtTop:'court-top-short'

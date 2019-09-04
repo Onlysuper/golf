@@ -13,7 +13,7 @@
         <view class="tab-box">
             <view class="item local" bindtap="localUrl">
                 <view class="m-text-color-placeholder">区域</view>
-                <view class="line-split">北京 <text class="iconfont icon-xiangxiajiantou m-font-size-sm"></text></view>
+                <view class="line-split">{{currentCity}} <text class="iconfont icon-xiangxiajiantou m-font-size-sm"></text></view>
             </view>
             <view class="item date" bindtap="openDialog">
                 <view class="m-text-color-placeholder">开球日期</view>

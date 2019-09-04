@@ -7,7 +7,7 @@
     right: 0;
     position: fixed;
     background: #fff;
-    height: 300rpx;
+    height: 320rpx;
     transition: all .50s;
 }
 .court-top.court-top-short{
@@ -17,7 +17,7 @@
     border-top: 1px solid #f8f8f8;
 }
 .place-space-top{
-    height: 300rpx;
+    height: 320rpx;
 }
 .search-box{
     display: flex;
@@ -59,6 +59,7 @@
     justify-content: center;
     text-align: center;
     height: 99rpx;
+
 }
 .tab-box .item{
     flex:1;
@@ -89,10 +90,15 @@
     transition: all .50s;
 }
 .order-box{
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .order-box .item{
-    flex:1
+    flex:1;
+   
 }
 .order-box .item.active{
     position: relative;

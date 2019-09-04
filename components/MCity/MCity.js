@@ -66,7 +66,6 @@ Component({
       this.setData({
         cityListId: Item
       });
-      console.log(this.data.cityListId);
     },
     //调用定位
     getLocate() {
@@ -87,7 +86,6 @@ Component({
     }
   },
   ready() {
-    console.log(getApp());
     let that = this,
       cityOrTime = wx.getStorageSync('locatecity') || {},
       time = new Date().getTime(),

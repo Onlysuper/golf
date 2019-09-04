@@ -16,6 +16,18 @@
         "text": "首页"
       },
       {
+        "pagePath": "pages/court/court",
+        "text": "订场"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "客服"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "帮助"
+      },
+      {
         "pagePath": "pages/user/index",
         "text": "我的"
       }

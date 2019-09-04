@@ -1,13 +1,13 @@
 <view class="home-page m-font-size-base m-text-color">
     <!-- 搜索栏 -->
     <view class="page-block home-search m-bg-color">
-        <view class="city">北京</view>
+        <view class="city"> <text class="iconfont icon-dingwei m-color-price"></text>北京</view>
         <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
             <icon class="icon" size="15" type="search" />
             <input placeholder="请输入球场名称"/>
         </view>
         <view class="phone">
-            <icon type="download" />
+            <text class="iconfont icon-dingwei m-color-price"></text>
         </view>
     </view>
     <view class="place-space"></view>
@@ -26,7 +26,7 @@
    <view class="page-block home-gride m-bg-color m-top-base">
         <block wx:for="{{grideList}}">
             <view class="item">
-                <navigator open-type="navigateTo" url="{{item.url}}">
+                <navigator open-type="{{item.url==='/pages/court/court'?'switchTab':'navigateTo'}}" url="{{item.url}}">
                     <view class="pic-box">
                         <image class="img" mode="aspectFill" src="{{item.icon}}"></image>
                     </view>

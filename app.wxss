@@ -6,7 +6,7 @@ page{
     background: #f8f8f8;
 }
 .m-border-bottom-1px{
-    border-bottom: 1px solid #c8c7cc;
+    border-bottom: 1px solid #eee;
 }
 /* 轻灰色分割线 */
 .m-border-bottom-1pxl{

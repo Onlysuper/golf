@@ -27,6 +27,12 @@
 }
 .home-search .city{
     flex:0 0 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-search .city .iconfont{
+    
 }
 .home-search .phone{
     flex:0 0 1;

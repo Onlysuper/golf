@@ -1,8 +1,6 @@
 /* pages/court/court.wxss */
 /* @import 'style.widget.weui-button.weui-button.wxss'; */
-/* .overhidden{
-    overflow: hidden;
-} */
+
 .court-top{
     top: 0;
     left: 0;
@@ -68,6 +66,9 @@
 .tab-box .item .line-split{
     border-right: 1px solid #c8c7cc;
 }
+/* .tab-box .item .iconfont{
+    font-size: 
+} */
 
 .order-box{
     display: flex;
@@ -87,14 +88,37 @@
     background: #fff;
     transition: all .50s;
 }
+.order-box{
+    position: relative;
+}
 .order-box .item{
     flex:1
+}
+.order-box .item.active{
+    position: relative;
+    /* color:red; */
+}
+.order-box .line{
+    background: #dd524d;
+    height: 4rpx;
+    width:30px;
+    position: absolute;
+    bottom: 0;
+    transition: all .3s linear;
 }
 
 
 /* 列表 */
 .list-box{
     /* background:red; */
+}
+.list-box .item{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    border-bottom: 1px solid #eee;
+}
+.list-box .item:last-of-type{
+    border-bottom: 0px;
 }
 .list-box .item navigator{
     display: flex;
@@ -106,7 +130,7 @@
     flex:0 0 150rpx;
     height: 150rpx;
     overflow: hidden;
-    border:1px solid #c8c7cc;
+    border:1px solid #eee;
     border-radius: 12rpx;
 }
 .list-box .item .pic image{

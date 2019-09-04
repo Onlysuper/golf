@@ -12,7 +12,19 @@ Component({
       type: String,
       value: ''
     },
+    icon: { // 属性名
+      type: String,
+      value: ''
+    },
     link: {
+      type: Boolean,
+      value: false
+    },
+    split: {
+      type: Boolean,
+      value: false
+    },
+    splitBlod: {
       type: Boolean,
       value: false
     }

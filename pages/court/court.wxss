@@ -96,7 +96,7 @@
 .list-box{
     /* background:red; */
 }
-.list-box .item{
+.list-box .item navigator{
     display: flex;
     flex-direction: row;
     align-items: center;

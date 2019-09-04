@@ -11,22 +11,22 @@ Page({
     // 选项按钮
     grideList:[
       {
-        label:'订场',
+        label:'预订',
         icon:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
         url:'/pages/court/court'
       },
       {
-        label:'会员专享',
+        label:'活动',
         icon:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
         url:'/pages/court/court'
       },
       {
-        label:'旅游',
+        label:'行程',
         icon:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
         url:'/pages/court/court'
       },
       {
-        label:'旅游',
+        label:'赛事',
         icon:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
         url:'/pages/court/court'
       }

@@ -1,9 +1,16 @@
 @import 'style/weui.wxss';
+@import 'style/icon/icon.wxss';
 @import 'style/global/global.wxss';
 
-
+page{
+    background: #f8f8f8;
+}
 .m-border-bottom-1px{
     border-bottom: 1px solid #c8c7cc;
+}
+/* 轻灰色分割线 */
+.m-border-bottom-1pxl{
+    border-bottom: 1px solid #f8f8f8;
 }
 /* 文字尺寸 */
 .m-font-size-sm{font-size:24rpx}

@@ -28,78 +28,7 @@
 
     <view class="list-box page-block">
        <view class="item m-border-bottom-1px">
-            <view class="pic">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-            </view>
-            <view class="content">
-                <view class="label">广州莲花山</view>
-                <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                <view class="m-color-price">
-                    ¥520起<text class="tip">特惠</text>
-                </view>
-            </view>
-        </view>
-        <view class="item m-border-bottom-1px">
-            <view class="pic">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-            </view>
-            <view class="content">
-                <view class="label">广州莲花山</view>
-                <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                <view class="m-color-price">
-                    ¥520起<text class="tip">特惠</text>
-                </view>
-            </view>
-        </view>
-        <view class="item m-border-bottom-1px">
-            <view class="pic">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-            </view>
-            <view class="content">
-                <view class="label">广州莲花山</view>
-                <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                <view class="m-color-price">
-                    ¥520起<text class="tip">特惠</text>
-                </view>
-            </view>
-        </view>
-        <view class="item m-border-bottom-1px">
-            <view class="pic">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-            </view>
-            <view class="content">
-                <view class="label">广州莲花山</view>
-                <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                <view class="m-color-price">
-                    ¥520起<text class="tip">特惠</text>
-                </view>
-            </view>
-        </view>
-        <view class="item m-border-bottom-1px">
-            <view class="pic">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-            </view>
-            <view class="content">
-                <view class="label">广州莲花山</view>
-                <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                <view class="m-color-price">
-                    ¥520起<text class="tip">特惠</text>
-                </view>
-            </view>
-        </view>
-        <view class="item m-border-bottom-1px">
-            <view class="pic">
-                <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-            </view>
-            <view class="content">
-                <view class="label">广州莲花山</view>
-                <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                <view class="m-color-price">
-                    ¥520起<text class="tip">特惠</text>
-                </view>
-            </view>
-        </view>
-        <view class="item m-border-bottom-1px">
+            <navigator open-type="navigateTo" url="/pages/court/detail/detail">
                 <view class="pic">
                     <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
                 </view>
@@ -110,67 +39,9 @@
                         ¥520起<text class="tip">特惠</text>
                     </view>
                 </view>
-            </view>
-            <view class="item m-border-bottom-1px">
-                <view class="pic">
-                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                </view>
-                <view class="content">
-                    <view class="label">广州莲花山</view>
-                    <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                    <view class="m-color-price">
-                        ¥520起<text class="tip">特惠</text>
-                    </view>
-                </view>
-            </view>
-            <view class="item m-border-bottom-1px">
-                <view class="pic">
-                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                </view>
-                <view class="content">
-                    <view class="label">广州莲花山</view>
-                    <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                    <view class="m-color-price">
-                        ¥520起<text class="tip">特惠</text>
-                    </view>
-                </view>
-            </view>
-            <view class="item m-border-bottom-1px">
-                <view class="pic">
-                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                </view>
-                <view class="content">
-                    <view class="label">广州莲花山</view>
-                    <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                    <view class="m-color-price">
-                        ¥520起<text class="tip">特惠</text>
-                    </view>
-                </view>
-            </view>
-            <view class="item m-border-bottom-1px">
-                <view class="pic">
-                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                </view>
-                <view class="content">
-                    <view class="label">广州莲花山</view>
-                    <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                    <view class="m-color-price">
-                        ¥520起<text class="tip">特惠</text>
-                    </view>
-                </view>
-            </view>
-            <view class="item m-border-bottom-1px">
-                <view class="pic">
-                    <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                </view>
-                <view class="content">
-                    <view class="label">广州莲花山</view>
-                    <view class="distance m-text-color-placeholder">直线距离1904.06km</view>
-                    <view class="m-color-price">
-                        ¥520起<text class="tip">特惠</text>
-                    </view>
-                </view>
-            </view>
+            </navigator>
+        </view>
+       
     </view>
 
     <!-- 日历弹出框start -->

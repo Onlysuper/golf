@@ -7,14 +7,35 @@ Page({
   data: {
     menulist:[
       {
-        icon:"",
-        title:"会员中心",
+        icon:"http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
+        label:"我的代金券",
         link:true,
+        split:true,
       },
       {
-        icon:"",
-        title:"我的收藏",
+        icon:"http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
+        label:"会员中心",
         link:true,
+        split:true,
+      },
+      {
+        icon:"http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
+        label:"我的嘉宾",
+        link:true,
+        split:true,
+      },
+      {
+        icon:"http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
+        label:"我的客服专员",
+        link:true,
+        split:false,
+      },
+      {
+        icon:"http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
+        label:"设置",
+        link:true,
+        split:false,
+        splitBlod:true
       }
     ]
   },

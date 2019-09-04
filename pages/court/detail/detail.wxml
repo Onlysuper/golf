@@ -1,0 +1,11 @@
+<!--pages/court/detail/detail.wxml-->
+<view class="court-detail">
+    <view class="main-img">
+            <image class="img" mode="aspectFit" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+    </view>
+    <view class="local">
+        <text>北京宝兴c场</text>
+        <text class="icon"></text>
+    </view>
+
+</view>

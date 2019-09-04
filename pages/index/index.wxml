@@ -12,7 +12,7 @@
     </view>
     <view class="place-space"></view>
     <!-- 轮播图 -->
-    <view class="page-block home-banner">
+    <view class="page-block home-banner m-bg-color">
         <swiper indicator-dots="{{indicatorDots}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
         <block wx:for="{{imgUrls}}">
@@ -22,35 +22,90 @@
         </block>
         </swiper>
     </view>
-   <!-- 选项栏目 -->
-   <view class="page-block home-gride">
+    <!-- 选项栏目 -->
+   <view class="page-block home-gride m-bg-color m-top-base">
         <block wx:for="{{grideList}}">
             <view class="item">
                 <navigator open-type="navigateTo" url="{{item.url}}">
                     <view class="pic-box">
-                        <image class="img" mode="aspectFit" src="{{item.icon}}"></image>
+                        <image class="img" mode="aspectFill" src="{{item.icon}}"></image>
                     </view>
                     <text>{{item.label}}</text>
                 </navigator>
             </view>
         </block>
+    </view>
+    <!-- 认证会员 -->
+    <view class="vip-container m-bg-color m-top-base">
+        <view class="content">
+            <view class="label m-font-size-lg">会员身份预订！</view>
+            <view>享受更多权益、优惠</view>
+        </view>
+        <view class="but m-font-size-lg m-color-price">认证会员信息</view>
+    </view>
+    <!-- 最新活动 -->
+    <view class="page-block home-hot-sell m-bg-color m-top-base">
+        <view class="page-title">
+            <text>最新活动</text>
+            <view class="icon-r m-text-color-placeholder">
+                <text>更多</text>
+                <text class="iconfont icon-gengduo"></text>
+            </view>
+        </view>
+        <view class="item">
+            <!-- <view class="item-title"><navigator open-type="navigateTo" url="/pages/search/index">深圳云海谷</navigator></view> -->
+            <view class="pro">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="content m-border-bottom-1pxl">
+                        <view class="label m-font-size-lg">36度假会籍</view>
+                        <view class="text m-text-color-placeholder">
+                            <text class="tip">2019.09.10</text>
+                            <text class="tip">深圳西丽</text>
+                        </view>
+                        <view class="text price-box m-font-size-lg">费用：<text class="price m-color-price">¥1900</text></view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="pro">
+                <navigator open-type="navigateTo" url="/pages/search/index">
+                    <view class="pic">
+                        <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                    </view>
+                    <view class="content m-border-bottom-1pxl">
+                        <view class="label m-font-size-lg">36度假会籍</view>
+                        <view class="text m-text-color-placeholder">
+                            <text class="tip">2019.09.10</text>
+                            <text class="tip">深圳西丽</text>
+                        </view>
+                        <view class="text price-box m-font-size-lg">费用：<text class="price m-color-price">¥1900</text></view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
    </view>
-   <!-- 热门 -->
-   <view class="page-block home-block">
-        <view class="page-title">限时抢购</view>
+   
+   <!-- 热门球场 -->
+   <view class="page-block home-block m-bg-color m-top-base">
+        <view class="page-title">热门球场</view>
         <view class="hot-scrow">
-            <swiper interval="{{interval}}" circular="true" duration="{{duration}}"  previous-margin="50rpx" next-margin="50rpx">
+            <!-- <swiper interval="{{interval}}" circular="true" duration="{{duration}}"  previous-margin="50rpx" next-margin="50rpx"> -->
+            <swiper interval="{{interval}}" circular="true" duration="{{duration}}" display-multiple-items="3">
             <block wx:for="{{hotCourts}}">
                 <swiper-item class="m-item">
-                    <image src="{{item.img}}" class="slide-image m-border-radius-lg"/>
+                    <view class="slide-image">
+                        <image src="{{item.img}}"  mode="aspectFill"/>
+                    </view>
                     <view class="text">
                         <view class="box">
                             <view class="label">{{item.title}}</view>
                             <view class="content m-font-size-sm m-text-color-placeholder">{{item.content}}</view>
                         </view>
-                        <view class="price">
+                        <!-- <view class="price">
                             <text class="tip m-bg-color-grey m-color-price m-font-size-lg m-border-radius-lg">¥2688</text>
-                        </view>
+                        </view> -->
                     </view>
                 </swiper-item>
             </block>
@@ -58,7 +113,7 @@
         </view>
    </view>
    <!-- 双排列表 -->
-   <view class="page-block home-double-col">
+   <!-- <view class="page-block home-double-col">
         <view class="page-title">特卖汇</view>
         <view class="container">
             <view class="item">
@@ -123,39 +178,6 @@
             </view>
 
         </view>
-   </view>
-   <view class="page-block home-hot-sell">
-        <view class="page-title">热销会籍</view>
-        <view class="item">
-            <view class="item-title"><navigator open-type="navigateTo" url="/pages/search/index">深圳云海谷</navigator></view>
-            <view class="pro">
-                <navigator open-type="navigateTo" url="/pages/search/index">
-                    <view class="pic">
-                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                    </view>
-                    <view class="content">
-                        <view class="label m-font-size-lg">36度假会籍</view>
-                        <view class="text">
-                            <text class="tip m-color-price m-bg-color-active">新会籍</text>
-                        </view>
-                        <view class="text">推广价：<text class="price m-color-price">双提名/6.8万元</text></view>
-                    </view>
-                </navigator>
-            </view>
-            <view class="pro">
-                <navigator open-type="navigateTo" url="/pages/search/index">
-                    <view class="pic">
-                        <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                    </view>
-                    <view class="content">
-                        <view class="label m-font-size-lg">36度假会籍</view>
-                        <view class="text">
-                            <text class="tip m-color-price m-bg-color-active">新会籍</text>
-                        </view>
-                        <view class="text">推广价：<text class="price m-color-price">双提名/6.8万元</text></view>
-                    </view>
-                </navigator>
-            </view>
-        </view>
-   </view>
+   </view> -->
+   
 </view>

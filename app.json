@@ -6,7 +6,8 @@
     "pages/user/index",
     "pages/court/court",
     "pages/city/city",
-    "pages/country/country"
+    "pages/country/country",
+    "pages/court/detail/detail"
   ],
   "tabBar": {
     "list": [

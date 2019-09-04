@@ -1,6 +1,8 @@
 <!--components/MCell/MCell.wxml-->
-<view class="m-cell">
-  <view class="icon"></view>
-  <view>{{title}}</view>
-  <view hidden="{{link}}" class='link'>></view>
+<view class="m-cell {{splitBlod?'split-blod':''}}">
+  <view class="icon">  
+    <image class="img" mode="aspectFit" src="{{icon}}"></image>
+  </view>
+  <view class="content m-text-color m-font-size-base {{split?'split':''}}">{{title}}</view>
+  <view class='link m-text-color-placeholder' hidden="{{!link}}">></view>
 </view>

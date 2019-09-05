@@ -54,7 +54,7 @@
     <!-- 日历弹出框start -->
     <!-- <datepick id="datepick" showDialog="{{showDialog}}" bind:changeDateFn="changeDateFn" bind:closeDialogFn="closeDialogFn"></datepick> -->
     <!-- 日历弹出框end -->
-
+    <!-- 日历开始 -->
     <view class="weui-demo-dialog {{showDialog ? 'weui-demo-dialog_show' : ''}}">
         <view class="weui-mask" bindtap="closeDialogFn"></view>
         <view class="weui-half-screen-dialog" catchtap="stopEvent">
@@ -79,4 +79,6 @@
             </view>
         </view>
     </view>
+    <!-- 日历结束 -->
+    
 </view>

@@ -14,17 +14,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date:{},
-    // 弹出框
-    showDialog: false,
-    date:{},//日期
+    timeList:[
+      {label:'06:30'},
+      {label:'06:40'},
+      {label:'06:50'},
+      {label:'07:00'},
+      {label:'07:10'},
+      {label:'07:20'},
+      {label:'07:30'},
+      {label:'07:40'},
+      {label:'07:50'},
+      {label:'08:00'},
+    ],//日期
+    timeDialog:false, // 开球时间弹框
+    showDialog: false, // 日历弹框
+    orderDialog:false,// 预订窗口弹框
     calendarConfig: {
       // 配置内置主题
       theme: 'elegant',
       disablePastDay:true,// 是否禁选过去的日期
       onlyShowCurrentMonth: true, // 日历面板是否只显示本月日期
       onlyShowCurrentMonth: 1,
-      // hideHeadOnWeekMode: true, // 周视图模式是否隐藏日历头部
       showHandlerOnWeekMode: false // 周视图模式是否显示日历头部操作栏，hideHeadOnWeekMode 优先级高于此配置
     },
     calendarConfig2: {
@@ -32,7 +42,6 @@ Page({
       theme: 'elegant',
       disablePastDay:true,// 是否禁选过去的日期
       onlyShowCurrentMonth: true, // 日历面板是否只显示本月日期
-      // hideHeadOnWeekMode: true, // 周视图模式是否隐藏日历头部
       showHandlerOnWeekMode: false, // 周视图模式是否显示日历头部操作栏，hideHeadOnWeekMode 优先级高于此配置
       defaultDay:getNextMonth()
     }
@@ -46,6 +55,24 @@ Page({
     this.defaultDate();
     this.setSchedule()
   },
+  // 选择开球时间
+  choseTime(e){
+    let time = e.target.dataset.current;
+    this.closeTimeDialog();
+    this.openOrderDialog();
+  },
+  // 预订窗口打开
+  openOrderDialog(){
+    this.setData({
+      orderDialog: true
+    })
+  },
+  closeOrderDialog(){
+    this.setData({
+      orderDialog: true
+    })
+  },
+  // 设置日历价格
   setSchedule(){
     setTimeout(()=>{
       //第一个月份标记
@@ -96,6 +123,17 @@ Page({
         day,
         week
       }
+    })
+  },
+  // 时间start
+  openTimeDialog(){
+    this.setData({
+      timeDialog: true
+    })
+  },
+  closeTimeDialog: function () {
+    this.setData({
+      timeDialog: false
     })
   },
   // 日历start

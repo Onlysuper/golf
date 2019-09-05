@@ -101,6 +101,19 @@ justify-content:center;
     padding: 10rpx 20rpx;
     line-height: 1.5;
 }
+.time-box{
+    padding: 20rpx;
+}
+.time-box .container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.time-box .tip{
+    border-radius: 12rpx;
+    padding: 10rpx 20rpx;
+    margin: 15rpx 20rpx;
+}
 
 /* 日历弹出框start */
 .weui-demo-dialog{
@@ -121,3 +134,35 @@ opacity:1;
 }
     
 /* 日历弹出框end */
+
+
+/* 预订窗口 */
+.order-show .row{
+ display: flex;
+ flex-direction: row;
+ padding: 20rpx 30rpx;
+}
+.order-show .label{
+    padding-right: 20rpx;
+    white-space: nowrap;
+}
+.order-show .footer{
+    display: flex;
+    flex-direction: row;
+    height:88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    align-items: center;
+}
+.order-show .footer .icon-box{
+    flex: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 20rpx;
+    box-sizing: border-box;
+    
+}
+.order-show .footer .but-box{
+    flex: 1;
+    color:#fff;
+}

@@ -179,7 +179,6 @@ Page({
           }
         ]
       },'#calendar');
-      console.log('这里这里')
       this.calendar.setTodoLabels({
         // 待办点标记设置
         pos: 'bottom', // 待办点标记位置 ['top', 'bottom']

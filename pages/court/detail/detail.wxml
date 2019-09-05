@@ -9,9 +9,12 @@
             <text class="icon"><text class="iconfont icon-dingwei m-color-price"></text></text>
         </view>
     </view>
-    <view class="m-font-size-base m-bg-color chose-time">
+    <!-- <button class="kf_button" open-type="contact" session-from="weapp">
+        客服
+    </button> -->
+    <view bindtap="openDialog" class="m-font-size-base m-bg-color chose-time">
         <text class="m-font-size-lg">打球日期选择</text>
-        <text class="m-font-size-lg m-color-price">9月6日(后天) <text class="iconfont icon-gengduo"></text></text>
+        <text class="m-font-size-lg m-color-price">{{date.month}}月{{date.day}}日 <text class="iconfont icon-gengduo"></text></text>
     </view>
     <view class="time-interval m-font-size-base m-bg-color ">
         <view class="page-block item time">时段 10:00-12:30</view>
@@ -59,5 +62,30 @@
             </view>
         </view>
     </view>
-    
+     <!-- 日历弹出框start -->
+     <!-- <datepick showDialog="{{showDialog}}" bind:changeDateFn="changeDateFn" bind:closeDialogFn="closeDialogFn"></datepick> -->
+     <!-- 日历弹出框end -->
+    <view class="weui-demo-dialog {{showDialog ? 'weui-demo-dialog_show' : ''}}">
+        <view class="weui-mask" bindtap="closeDialogFn"></view>
+        <view class="weui-half-screen-dialog" catchtap="stopEvent">
+            <view class="weui-half-screen-dialog__hd">
+            <view class="weui-half-screen-dialog__hd__side">
+                <view bindtap="closeDialogFn" class="weui-icon-btn weui-icon-btn_close">关闭</view>
+            </view>
+            <view class="weui-half-screen-dialog__hd__main">
+                <text class="weui-half-screen-dialog__title">选择日期111</text>
+            </view>
+            <view class="weui-half-screen-dialog__hd__side">
+                <view class="weui-icon-btn weui-icon-btn_more">更多</view>
+            </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd">
+            <scroll-view scroll-y style="height: 250px;">
+                <view class="calendar-box">
+                    <calendar id="calendar2" calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
+                </view>
+            </scroll-view>
+            </view>
+        </view>
+    </view>
 </view>

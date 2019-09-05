@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "datepick":   "/components/MDatePick/MDatePick"
+    "calendar": "/components/calendar/index"
   }
 }

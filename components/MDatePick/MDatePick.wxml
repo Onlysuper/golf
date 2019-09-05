@@ -2,7 +2,6 @@
 <!-- 日历弹出框start -->
 <!-- <view class="weui-demo-dialog {{showDialog ? 'weui-demo-dialog_show' : ''}}" catchtouchmove="true"> -->
 <view class="weui-demo-dialog {{showDialog ? 'weui-demo-dialog_show' : ''}}">
-        测试
     <view class="weui-mask" bindtap="closeDialogFn"></view>
     <view class="weui-half-screen-dialog" catchtap="stopEvent">
         <view class="weui-half-screen-dialog__hd">
@@ -19,7 +18,7 @@
         <view class="weui-half-screen-dialog__bd">
         <scroll-view scroll-y style="height: 250px;">
             <view class="calendar-box">
-                <calendar calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
+                <calendar id="calendar" calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
             </view>
         </scroll-view>
         </view>

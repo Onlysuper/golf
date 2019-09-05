@@ -52,6 +52,30 @@
     </view>
 
     <!-- 日历弹出框start -->
-    <datepick calendarConfig="{{calendarConfig}}" showDialog="{{showDialog}}" bind:changeDateFn="changeDateFn" bind:closeDialogFn="closeDialogFn"></datepick>
+    <!-- <datepick id="datepick" showDialog="{{showDialog}}" bind:changeDateFn="changeDateFn" bind:closeDialogFn="closeDialogFn"></datepick> -->
     <!-- 日历弹出框end -->
+
+    <view class="weui-demo-dialog {{showDialog ? 'weui-demo-dialog_show' : ''}}">
+        <view class="weui-mask" bindtap="closeDialogFn"></view>
+        <view class="weui-half-screen-dialog" catchtap="stopEvent">
+            <view class="weui-half-screen-dialog__hd">
+            <view class="weui-half-screen-dialog__hd__side">
+                <view bindtap="closeDialogFn" class="weui-icon-btn weui-icon-btn_close">关闭</view>
+            </view>
+            <view class="weui-half-screen-dialog__hd__main">
+                <text class="weui-half-screen-dialog__title">选择日期</text>
+            </view>
+            <view class="weui-half-screen-dialog__hd__side">
+                <view class="weui-icon-btn weui-icon-btn_more">更多</view>
+            </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd">
+            <scroll-view scroll-y style="height: 250px;">
+                <view class="calendar-box">
+                    <calendar id="calendar" calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
+                </view>
+            </scroll-view>
+            </view>
+        </view>
+    </view>
 </view>

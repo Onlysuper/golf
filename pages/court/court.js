@@ -1,5 +1,15 @@
 // pages/court/court.js
 import tool from "../../common/tool.js";
+//指定下个月份
+function getNextMonth (date,length) {
+  var date1 = new Date();
+  var date2 = new Date(date1);
+  date2.setDate(date1.getDate() + 30);
+  let nMonth = date2.getMonth() + 1;
+  let nDate = date2.getFullYear()+'-'+nMonth+'-1';
+  return nDate;
+}
+
 Page({
 
   /**
@@ -86,12 +96,23 @@ Page({
     date:{},//日期
     area:{},//区域
     calendarConfig: {
+     
+      // 配置内置主题
+      theme: 'elegant',
+      disablePastDay:true,// 是否禁选过去的日期
+      onlyShowCurrentMonth: true, // 日历面板是否只显示本月日期
+      onlyShowCurrentMonth: 1,
+      // hideHeadOnWeekMode: true, // 周视图模式是否隐藏日历头部
+      showHandlerOnWeekMode: false // 周视图模式是否显示日历头部操作栏，hideHeadOnWeekMode 优先级高于此配置
+    },
+    calendarConfig2: {
       // 配置内置主题
       theme: 'elegant',
       disablePastDay:true,// 是否禁选过去的日期
       onlyShowCurrentMonth: true, // 日历面板是否只显示本月日期
       // hideHeadOnWeekMode: true, // 周视图模式是否隐藏日历头部
-      // showHandlerOnWeekMode: true // 周视图模式是否显示日历头部操作栏，hideHeadOnWeekMode 优先级高于此配置
+      showHandlerOnWeekMode: false, // 周视图模式是否显示日历头部操作栏，hideHeadOnWeekMode 优先级高于此配置
+      defaultDay:getNextMonth()
     }
   },
   afterTapDay(e){
@@ -143,7 +164,6 @@ Page({
   },
   setSchedule(){
     setTimeout(()=>{
-      console.log(this.calendar.setTodoLabels);
       this.calendar.setTodoLabels({
         // 待办点标记设置
         pos: 'bottom', // 待办点标记位置 ['top', 'bottom']
@@ -158,8 +178,24 @@ Page({
             todoText: '¥780'
           }
         ]
-      });
-    },100)
+      },'#calendar');
+      console.log('这里这里')
+      this.calendar.setTodoLabels({
+        // 待办点标记设置
+        pos: 'bottom', // 待办点标记位置 ['top', 'bottom']
+        dotColor: '#40', // 待办点标记颜色
+        // circle: false, // 待办圆圈标记设置（如圆圈标记已签到日期），该设置与点标记设置互斥
+        showLabelAlways: true, // 点击时是否显示待办事项（圆点/文字），在 circle 为 true 及当日历配置 showLunar 为 true 时，此配置失效
+        days: [
+          {
+            year: 2019,
+            month: 10,
+            day: 10,
+            todoText: '¥780'
+          }
+        ]
+      },'#calendar2');
+    },200)
   },
 
   // 初始化页面日期

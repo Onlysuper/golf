@@ -73,7 +73,7 @@
                 <view bindtap="closeDialogFn" class="weui-icon-btn weui-icon-btn_close">关闭</view>
             </view>
             <view class="weui-half-screen-dialog__hd__main">
-                <text class="weui-half-screen-dialog__title">选择日期111</text>
+                <text class="weui-half-screen-dialog__title">选择日期</text>
             </view>
             <view class="weui-half-screen-dialog__hd__side">
                 <view class="weui-icon-btn weui-icon-btn_more">更多</view>
@@ -82,7 +82,8 @@
             <view class="weui-half-screen-dialog__bd">
             <scroll-view scroll-y style="height: 250px;">
                 <view class="calendar-box">
-                    <calendar id="calendar2" calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
+                        <calendar id="calendar" calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
+                        <calendar id="calendar2" calendarConfig="{{calendarConfig2}}"  bind:afterTapDay="afterTapDay"></calendar>
                 </view>
             </scroll-view>
             </view>

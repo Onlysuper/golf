@@ -73,6 +73,7 @@
             <scroll-view scroll-y style="height: 250px;">
                 <view class="calendar-box">
                     <calendar id="calendar" calendarConfig="{{calendarConfig}}"  bind:afterTapDay="afterTapDay"></calendar>
+                    <calendar id="calendar2" calendarConfig="{{calendarConfig2}}"  bind:afterTapDay="afterTapDay"></calendar>
                 </view>
             </scroll-view>
             </view>

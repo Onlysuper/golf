@@ -118,14 +118,11 @@ Page({
    },
   openDialog: function () {
       this.setData({
-          istrue: true
+        showDialog: true
       })
   },
-  closeDialog: function () {
-      this.setData({
-          istrue: false
-      })
-  },
+  
+
   localUrl: function(){
     wx.navigateTo({
       url:"/pages/city/city"
@@ -153,24 +150,18 @@ Page({
         week
       }
     })
-    // let nextMonth = month*1+1
-    // this.setData({
-    //   calendarConfig2:Object.assign(this.data.calendarConfig2,{
-    //     defaultDay:`${year}-${nextMonth}-${1}`
-    //   })
-    // })
-    // console.log(this.data.calendarConfig2);
   },
   search(){
     wx.navigateTo({
       url:"/pages/search/index"
     })
   },
-  doSomeThing() {
-    // 调用日历方法
-    this.calendar.enableArea(['2018-10-7', '2018-10-28']);
+  closeDialogFn: function () {
+      this.setData({
+        showDialog: false
+      })
   },
-  afterTapDay(e){
+  changeDateFn(e){
     let {year,month,day,week}=e.detail;
     this.setData({
       date:{
@@ -180,8 +171,7 @@ Page({
         week
       }
     })
-    // console.log(this.data.date)
-    this.closeDialog();
+    this.closeDialogFn();
   },
 
   /**

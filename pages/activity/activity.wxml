@@ -1,58 +1,61 @@
 <!--pages/activity/activity.wxml-->
 <view class="activity-page m-font-size-base m-text-color">
-        <view class="search-box page-block m-bg-color">
+        <view class="search-box page-block m-bg-color fixed">
             <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
                 <icon class="icon" size="15" type="search" />
                 <input placeholder="请输入球场名称"/>
             </view>
         </view>
+        <view class="place-space"></view>
         <view class="activety-main">
-            <view class="item page-block m-bg-color m-border-bottom-1px">
-                <view class="pic">
-                    <view class="box m-border-all-1px m-bg-color-grey">
-                        <view class="item time m-font-size-sm">9月6日-周五</view>
-                        <view class="logo-box">
-                            <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                        </view>
-                        <view class="item flag">会员日</view>
-                    </view>
-                </view>
-                <view class="body">
-                    <view class="label m-font-size-lg">CBD-特惠时段</view>
-                    <view class="text">开球时间：06:30-14:00</view>
-                    <view  class="text">会员价<text class="price">¥380</text></view>
-                    <view  class="text">嘉宾价<text class="price">¥450</text></view>
-                </view>
-                <view class="operation">
-                    <view class="but-box">
-                        <view class="but m-but-color-base">报名</view>
-                        <view class="m-text-color-placeholder m-font-size-sm">余44位</view>
-                    </view>
-                </view>
-            </view>
-
-            <view class="item disable page-block m-bg-color m-border-bottom-1px">
-                    <view class="pic">
-                        <view class="box m-border-all-1px m-bg-color-grey">
-                            <view class="item time m-font-size-sm">9月6日-周五</view>
-                            <view class="logo-box">
-                                <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                <block wx:for="{{dataList}}">
+                    <view class="item page-block m-bg-color m-border-bottom-1px">
+                        <view class="pic">
+                            <view class="box m-border-all-1px m-bg-color-grey">
+                                <view class="item time m-font-size-sm">9月6日-周五</view>
+                                <view class="logo-box">
+                                    <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                                </view>
+                                <view class="item flag">会员日</view>
                             </view>
-                            <view class="item flag">会员日</view>
+                        </view>
+                        <view class="body">
+                            <view class="label m-font-size-lg">CBD-特惠时段</view>
+                            <view class="text">开球时间：06:30-14:00</view>
+                            <view  class="text">会员价<text class="price">¥380</text></view>
+                            <view  class="text">嘉宾价<text class="price">¥450</text></view>
+                        </view>
+                        <view class="operation">
+                            <view class="but-box">
+                                <view bindtap="signSub" class="but m-but-color-base">报名</view>
+                                <view class="m-text-color-placeholder m-font-size-sm">余44位</view>
+                            </view>
                         </view>
                     </view>
-                    <view class="body">
-                        <view class="label m-font-size-lg">CBD-特惠时段</view>
-                        <view class="text">开球时间：06:30-14:00</view>
-                        <view  class="text">会员价<text class="price">¥380</text></view>
-                        <view  class="text">嘉宾价<text class="price">¥450</text></view>
+
+                    <view class="item disable page-block m-bg-color m-border-bottom-1px">
+                            <view class="pic">
+                                <view class="box m-border-all-1px m-bg-color-grey">
+                                    <view class="item time m-font-size-sm">9月6日-周五</view>
+                                    <view class="logo-box">
+                                        <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+                                    </view>
+                                    <view class="item flag">会员日</view>
+                                </view>
+                            </view>
+                            <view class="body">
+                                <view class="label m-font-size-lg">CBD-特惠时段</view>
+                                <view class="text">开球时间：06:30-14:00</view>
+                                <view  class="text">会员价<text class="price">¥380</text></view>
+                                <view  class="text">嘉宾价<text class="price">¥450</text></view>
+                            </view>
+                            <view class="operation">
+                                <!-- 已满 -->
+                                <view class="full">
+                                    已满
+                                </view>
+                            </view>
                     </view>
-                    <view class="operation">
-                        <!-- 已满 -->
-                        <view class="full">
-                            已满
-                        </view>
-                    </view>
-                </view>
+                </block>
         </view>
 </view>

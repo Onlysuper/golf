@@ -8,6 +8,12 @@
     z-index: 100;
     width: 100%;
 }
+.search-box.fixed{
+    position: fixed;
+    left:0;
+    top: 0;
+    right: 0;
+}
 
 .search-box .input-box{
     flex:1;
@@ -47,6 +53,7 @@
 .place-space{
     height: 99rpx;
     width: 100%;
+    background: transparent;
 }
 /* 大标题 */
 .page-title{

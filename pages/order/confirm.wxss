@@ -1,0 +1,61 @@
+/* pages/order/confirm.wxss */
+.order-confirm-page .header .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 99rpx;
+} 
+.order-confirm-page .content,.order-confirm-page .edit-box{
+    margin-top: 20rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+}
+.order-confirm-page  .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.order-confirm-page  .row .top-align{
+    align-self:flex-start;
+    /* padding-top: 20rpx; */
+}
+.order-confirm-page .row input,.order-confirm-page .row textarea{
+    line-height: 40rpx;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+.order-confirm-page .row .label{
+    min-width: 150rpx;
+    /* padding-top: 10rpx; */
+}
+.order-confirm-page .row .text{
+    margin-left: 20rpx;
+    flex: 1;
+}
+.order-confirm-page .edit-box{
+    margin-top: 20rpx;
+}
+.order-confirm-page .footer{
+    position: fixed;
+    height: 99rpx;
+    line-height: 99rpx;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.order-confirm-page .footer .price-box{
+    height: 99rpx;
+    line-height: 99rpx;
+    flex: 1;
+    padding: 0 30rpx;
+}
+.order-confirm-page .footer .but{
+    font-size: 32rpx;
+    color: #fff;
+    padding: 0 30rpx;
+}

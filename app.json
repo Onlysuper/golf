@@ -10,7 +10,9 @@
     "pages/court/detail/detail",
     "pages/order/order",
     "pages/service/service",
-    "pages/activity/activity"
+    "pages/activity/activity",
+    "pages/order/confirm",
+    "pages/order/pay"
   ],
   "tabBar": {
     "list": [
@@ -37,8 +39,8 @@
     ]
   },
   "window": {
+    "backgroundTextStyle":"dark",
     "navigationBarTitleText": "WeChat",
-    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black"
   },

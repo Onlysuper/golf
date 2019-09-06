@@ -1,0 +1,51 @@
+<!--pages/order/confirm.wxml-->
+<view class="order-confirm-page m-font-size-base m-text-color">
+    <view class="header m-bg-color">
+        <view class="title page-block m-border-bottom-1px">
+            <text class="m-font-size-lg">思格森</text>
+            <text class="m-font-size-sm m-color-active">活动须知 ></text>
+        </view>
+    </view>
+    <view class="content m-bg-color page-block">
+        <view class="row">
+            <view class="label m-text-color-placeholder">活动日期</view>
+            <view class="text">09月28日（周六）06:30</view>
+        </view>
+        <view class="row">
+            <view class="label m-text-color-placeholder">嘉宾价格</view>
+            <view class="text m-color-price">¥800</view>
+        </view>
+        <view class="row">
+            <view class="label m-text-color-placeholder">会员姓名</view>
+            <view class="text">老萌</view>
+        </view>
+        <view class="row">
+            <view class="label m-text-color-placeholder">会员电话</view>
+            <view class="text">17600802360</view>
+        </view>
+    </view>
+    <view class="edit-box m-bg-color page-block">
+        <view class="row">
+            <view class="label">联系电话</view>
+            <view class="text">
+                <input type="number" placeholder="请输入联系电话"/>
+            </view>
+        </view>
+    </view>
+    <view class="edit-box m-bg-color page-block">
+        <view class="row">
+            <view class="label top-align">备注</view>
+            <view class="text">
+                <textarea placeholder="选填、输入备注信息"></textarea>
+            </view>
+        </view>
+    </view>
+    <view class="place-space"></view>
+    <view class="footer m-bg-color m-border-top-1px">
+        <view class="price-box">
+            <text>订单金额：</text>
+            <text class="m-color-price m-font-size-lg">¥800</text>
+        </view>
+        <view bindtap="confirmSubmit" class="but m-but-color-base">提交订单</view>
+    </view>
+</view>

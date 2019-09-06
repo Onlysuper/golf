@@ -18,7 +18,7 @@ Page({
       {
         label:'活动',
         icon:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
-        url:'/pages/court/court'
+        url:'/pages/activity/activity'
       },
       {
         label:'行程',

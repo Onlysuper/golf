@@ -9,7 +9,8 @@
     "pages/country/country",
     "pages/court/detail/detail",
     "pages/order/order",
-    "pages/service/service"
+    "pages/service/service",
+    "pages/activity/activity"
   ],
   "tabBar": {
     "list": [

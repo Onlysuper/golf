@@ -7,7 +7,9 @@
     "pages/court/court",
     "pages/city/city",
     "pages/country/country",
-    "pages/court/detail/detail"
+    "pages/court/detail/detail",
+    "pages/order/order",
+    "pages/service/service"
   ],
   "tabBar": {
     "list": [
@@ -20,16 +22,16 @@
         "text": "订场"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "客服"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "帮助"
+        "pagePath": "pages/order/order",
+        "text": "订单"
       },
       {
         "pagePath": "pages/user/index",
         "text": "我的"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "客服"
       }
     ]
   },

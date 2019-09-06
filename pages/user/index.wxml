@@ -1,15 +1,15 @@
 <view class="user-pages">
-    <view class="user-box page-block">
+    <view class="user-box page-block m-bg-color">
         <view class="img">
             <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
         </view>
         <view class="phone">
             <text class="phone m-font-size-lg">176****2360</text>
-            <text class="m-text-color-placeholder m-font-size-base">个人资料 ></text>
+            <view class="item-r m-text-color-placeholder m-font-size-base">  更多资料<text class="iconfont icon-gengduo"></text></view>
         </view>
     </view>
     <block wx:for="{{menulist}}">
-        <mcell title="{{item.label}}" link="{{item.link}}" split="{{item.split}}" icon="{{item.icon}}" splitBlod="{{item.splitBlod}}"></mcell>
+        <mcell bind:clickTab="clickTab" title="{{item.label}}" link="{{item.link}}" split="{{item.split}}" icon="{{item.icon}}" splitBlod="{{item.splitBlod}}"></mcell>
     </block>
 </view>
 

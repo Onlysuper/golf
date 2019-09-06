@@ -94,5 +94,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  // 点击菜单
+  clickTab(e){
+    let label = e.detail;
+    console.log(label);
   }
 })

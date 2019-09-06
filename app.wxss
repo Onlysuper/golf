@@ -4,6 +4,10 @@
 .weui-half-screen-dialog{
     padding: 0;
 }
+.weui-half-screen-dialog__hd{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
 page{
     background: #f8f8f8;
 }

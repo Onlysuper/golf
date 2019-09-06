@@ -25,10 +25,17 @@ border-bottom: 10rpx solid #f8f8f8;
   color: #333;
   font-size: 32rpx;
   padding: 10rpx 0;
+  margin-left: 20rpx;
 }
 .m-cell .content.split{
   border-bottom: 1rpx solid #f8f8f8;
 }
 .m-cell {
   color:#808080;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

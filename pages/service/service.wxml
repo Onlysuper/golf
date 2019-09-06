@@ -1,0 +1,23 @@
+<view class="service-page">
+    <view class="m-bg-color m-cell">
+        <view class="icon">  
+            <!-- <image class="img" mode="aspectFill" src="{{icon}}"></image> -->
+        </view>
+        <view class="content m-text-color m-font-size-base">
+            在线咨询
+            <button open-type="contact" class="content m-text-color m-font-size-base"></button>
+        </view>
+        <view class='link m-text-color-placeholder'>
+            <text class="iconfont icon-gengduo"></text>
+        </view>
+    </view>
+    <view  bindtap="callPhone" data-phone="17600802360" class="m-bg-color m-cell split-blod">
+        <view class="icon">  
+            <!-- <image class="img" mode="aspectFill" src="{{icon}}"></image> -->
+        </view>
+        <view class="content m-text-color m-font-size-base">电话咨询</view>
+        <view class='link m-text-color-placeholder'>
+            <text class="iconfont icon-gengduo"></text>
+        </view>
+    </view>
+</view>

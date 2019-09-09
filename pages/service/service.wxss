@@ -10,10 +10,6 @@
     /* box-sizing: border-box; */
   
   }
-  .m-cell.split-blod{
-  border-top: 10rpx solid #f8f8f8;
-  border-bottom: 10rpx solid #f8f8f8;
-  }
   
   .m-cell .icon{
     flex: 0 0 88rpx;

@@ -1,12 +1,12 @@
 <!--pages/user/information/information.wxml-->
 <view class="information-pages  m-font-size-base m-font-size-lg m-text-color">
-    <view class="row page-block m-bg-color">
+    <view class="row page-block m-bg-color m-border-bottom-1px">
         <view class="label m-font-size-lg">姓名</view>
         <view class="text">
             <input placeholder="请输入姓名"/>
         </view>
     </view>
-    <view class="row page-block m-bg-color">
+    <view class="row page-block m-bg-color m-border-bottom-1px">
         <view class="label m-font-size-lg">性别</view>
         <view class="text">
             <picker mode="selector" range="{{['男','女']}}" value="{{sex}}" bindchange="bindSexChange">
@@ -15,7 +15,7 @@
             </picker>
         </view>
     </view>
-    <view class="row page-block m-bg-color">
+    <view class="row page-block m-bg-color m-border-bottom-1px">
         <view class="label m-font-size-lg">生日</view>
         <view class="text">
             <picker mode="date" value="{{birthday}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">

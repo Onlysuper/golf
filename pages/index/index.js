@@ -1,5 +1,12 @@
-const app = getApp()
-
+// import {Test} from "../../common/apis/index.js";
+// Test("/example",{
+//   // name:'111'
+// }).then(res=>{
+//   console.log(res);
+// }).catch(err=>{
+//   console.log(err)
+// })
+const app = getApp();
 Page({
   data: {
     //banner

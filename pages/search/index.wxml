@@ -1,13 +1,48 @@
 <!--pages/search/index.wxml-->
-<view class="search-page">
-    <view class="home-search m-font-size-base m-bg-color">
+<view class="search-page m-font-size-base">
+    <view class="search-box fixed page-block m-bg-color">
         <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
             <icon class="icon" size="15" type="search" />
             <input focus="{{autoFocus}}" confirm-type="search" type='text' placeholder="请输入球场名称"/>
         </view>
-        <view class="but">
+        <view bindtap="goBack" class="but">
             取消
         </view>
     </view>
+    <view class="place-space"></view>
+    <!-- 搜索历史 strat -->
+    <view hidden="{{courtList.length>0}}" class='search-history'>
+        <view class="operation m-border-bottom-1px page-block">
+            <text class="label m-text-color-placeholder">最近搜索</text>
+            <text class="clear m-text-color-disable">清空搜索记录</text>
+        </view>
+        <view class="content m-spacing-lg">
+            <text class="tip m-bg-color-hover m-text-color-placeholder">北京CBD</text>
+        </view>
+    </view>
+    <!-- 搜索历史 end -->
+    <!-- 内容列表 strat -->
+    <view class="list-container">
+            <view class="list-box m-bg-color">
+                <block wx:for="{{courtList}}">
+                        <view class="item">
+                        <navigator open-type="navigateTo" url="/pages/court/detail/detail">
+                            <view class="pic">
+                                <image class="img" mode="aspectFill" src="{{item.img}}"></image>
+                            </view>
+                            <view class="content">
+                                <view class="label m-font-size-lg">{{item.label}}</view>
+                                <view class="distance m-text-color-placeholder">直线距离{{item.distance}}</view>
+                                <view class="m-color-price">
+                                    ¥<text class="m-font-size-lg">{{item.price}}</text>起
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                </block>
+            </view>
+    </view>
+    <!-- 内容列表 end -->
+   
 </view>
 

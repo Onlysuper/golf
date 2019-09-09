@@ -40,6 +40,7 @@ page{
 /* 按钮颜色 */
 .m-but-color-base{
     background: #007aff;
+    color:#fff;
 }
 /* 行为相关颜色 */
 .m-color-price{ color:#dd524d}

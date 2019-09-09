@@ -9,6 +9,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    index: { // 属性名
+      type: String,
+      value: ''
+    },
     title: { // 属性名
       type: String,
       value: ''
@@ -50,7 +54,8 @@ Component({
     clickTab(e){
       if(this.data.link){
         this.triggerEvent("clickTab",{
-          title:this.data.title
+          title:this.data.title,
+          index:this.data.index
         })
       }
     }

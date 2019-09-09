@@ -1,10 +1,11 @@
 <!--components/MCell/MCell.wxml-->
-<view bindtap="clickTab" class="m-bg-color m-cell {{splitBlod?'split-blod':''}}">
+<view bindtap="clickTab" class="m-bg-color m-cell {{split?'m-border-bottom-1px':''}}">
   <view class="icon">  
     <image class="img" mode="aspectFill" src="{{icon}}"></image>
   </view>
-  <view class="content m-text-color m-font-size-base {{split?'split':''}}">{{title}}</view>
+  <view class="content m-text-color m-font-size-base">{{title}}</view>
   <view class='link m-text-color-placeholder' hidden="{{!link}}">
       <text class="iconfont icon-gengduo"></text>
   </view>
+  
 </view>

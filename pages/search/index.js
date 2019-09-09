@@ -5,7 +5,63 @@ Page({
    * 页面的初始数据
    */
   data: {
-    autoFocus:true
+    autoFocus:true,
+    courtList:[
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      },
+      {
+        img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
+        label:'北京金山湖',
+        distance:'30.33km',
+        price:'650',
+      }
+    ]
   },
 
   /**
@@ -13,6 +69,21 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  // 取消
+  goBack(){
+    wx.navigateBack({
+      delta: 1, // 回退前 delta(默认为1) 页面
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
   },
 
   /**

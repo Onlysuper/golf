@@ -89,3 +89,18 @@
 .m-top-base{
     margin-top: 20rpx;
 }
+
+/* 中间大按钮 */
+.center-button{
+   padding: 30rpx;
+}
+.center-button button{
+    border: 0px;
+    background: transparent;
+    font-size: 32rpx;
+    background: #007aff;
+    color:#fff;
+}
+.center-button button::after{
+    border: 0;
+}

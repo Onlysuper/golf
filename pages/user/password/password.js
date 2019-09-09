@@ -1,12 +1,35 @@
-// pages/user/index.js
+// pages/user/information/information.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    sexArr:[
+      {
+       id:0,
+       name:'男'
+      },
+      {
+      id:1,
+      name:'女'
+      }
+    ],
+    birthday:"",
+    sex:""
   },
-
+  // 选择性别
+  bindSexChange:function(e){
+    this.setData({
+      sex: this.data.sexArr[e.detail.value].name
+    })
+  },
+  // 选择出生年月
+  bindDateChange: function(e) {
+    this.setData({
+      birthday: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -61,39 +84,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  // 点击菜单
-  clickTab(e){
-    let label = e.detail.index;
-    if(label==="information"){
-      // 编辑个人信息
-      wx.navigateTo({
-        url: "/pages/user/information/information", // 回退前 delta(默认为1) 页面
-        success: function(res){
-          // success
-        },
-        fail: function() {
-          // fail
-        },
-        complete: function() {
-          // complete
-        }
-      })
-    }
-    if(label==="password"){
-      // 修改密码
-      wx.navigateTo({
-        url: "/pages/user/password/password", // 回退前 delta(默认为1) 页面
-        success: function(res){
-          // success
-        },
-        fail: function() {
-          // fail
-        },
-        complete: function() {
-          // complete
-        }
-      })
-    }
   }
 })

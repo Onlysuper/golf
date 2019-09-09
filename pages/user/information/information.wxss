@@ -1,0 +1,23 @@
+/* pages/user/information/information.wxss */
+.information-pages{
+    
+}
+.information-pages .row{
+    display: flex;
+    flex-direction: row;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+.information-pages .row .label{
+    min-width: 120rpx;
+    flex: 0;
+}
+.information-pages .row .text{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.information-pages .row .text input,.information-pages .row .text picker{
+    flex: 1;
+}

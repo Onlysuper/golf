@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "mcell":   "/components/MCell/MCell"
-  }
+  },
+  "navigationBarTitleText": "我的"
 }

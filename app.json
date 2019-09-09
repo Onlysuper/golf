@@ -12,7 +12,9 @@
     "pages/service/service",
     "pages/activity/activity",
     "pages/order/confirm",
-    "pages/order/pay"
+    "pages/order/pay",
+    "pages/user/password/password",
+    "pages/user/information/information"
   ],
   "tabBar": {
     "list": [
@@ -39,7 +41,7 @@
     ]
   },
   "window": {
-    "backgroundTextStyle":"dark",
+    "backgroundTextStyle": "dark",
     "navigationBarTitleText": "WeChat",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black"

@@ -1,2 +1,53 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view class="order-page m-font-size-base m-text-color">
+    <!-- 导航栏 -->
+    <view class="order-top">
+        <scroll-view class="tab m-bg-color" scroll-x scroll-left="{{tabScroll}}" scroll-with-animation="true">
+            <block wx:for="{{menuList}}" wx:key="index">
+                <view class="tab-item {{currentTab == index ? 'active' : ''}}" data-current="{{index}}" bindtap='clickMenu'>{{item.name}}</view>
+            </block>
+        </scroll-view>
+        <view class="place-space"></view>
+        <view class="date-row m-bg-color page-block m-border-bottom-1px">
+            <view class="label">
+                下单日期
+            </view>
+            <view class="pick-box">
+                <picker mode="date" value="{{startDateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">
+                    <input placeholder="请选择开始日期" type="text" value="{{startDateValue}}" />
+                </picker>
+                ~
+                <picker mode="date" value="{{endDateValue}}" start="1999-01-01" end="2999-12-12" bindchange="endDatePickerBindchange">
+                    <input placeholder="请选择结束日期" type="text" value="{{endDateValue}}" />
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="order-top-place"></view>
+    <view class="list-container">
+        <view class="item m-bg-color">
+            <view class="header page-block m-border-bottom-1px">
+                <text class="title m-font-size-lg">北京宝兴</text>
+                <text class="state">待付款</text>
+            </view>
+            <view class="body page-block">
+                <view class="row">
+                    <label class="label">订单类型</label>
+                    <label class="text">球场预订</label>
+                </view>
+                <view class="row">
+                    <label class="label">订单总价</label>
+                    <label class="text">¥600</label>
+                </view>
+                <view class="row">
+                    <label class="label">下单时间</label>
+                    <label class="text">2019-09-04 11:30</label>
+                </view>
+            </view>
+            <view class="footer page-block m-border-top-1px">
+                <view class="but">取消订单</view>
+                <view class="but">去付款</view>
+            </view>
+        </view>
+    </view>
+</view>

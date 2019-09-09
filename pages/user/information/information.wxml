@@ -1,0 +1,36 @@
+<!--pages/user/information/information.wxml-->
+<view class="information-pages  m-font-size-base m-font-size-lg m-text-color">
+    <view class="row page-block m-bg-color">
+        <view class="label m-font-size-lg">姓名</view>
+        <view class="text">
+            <input placeholder="请输入姓名"/>
+        </view>
+    </view>
+    <view class="row page-block m-bg-color">
+        <view class="label m-font-size-lg">性别</view>
+        <view class="text">
+            <picker mode="selector" range="{{['男','女']}}" value="{{sex}}" bindchange="bindSexChange">
+               <view class="m-text-color-placeholder" hidden="{{sex}}"> 请选择性别</view>
+               <view hidden="{{!sex}}"> {{sex}}</view>
+            </picker>
+        </view>
+    </view>
+    <view class="row page-block m-bg-color">
+        <view class="label m-font-size-lg">生日</view>
+        <view class="text">
+            <picker mode="date" value="{{birthday}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <view class="m-text-color-placeholder" hidden="{{birthday}}">请选择出生日期</view>
+                <view hidden="{{!birthday}}" class="weui-input">{{birthday}}</view>
+            </picker>
+        </view>
+    </view>
+    <view class="row page-block m-bg-color">
+        <view class="label m-font-size-lg">手机号</view>
+        <view class="text"><input placeholder="请输入姓名"/></view>
+    </view>
+    <view class="center-button" style="margin-top:20rpx">
+        <button>提交更新</button>
+    </view>
+</view>
+
+    

@@ -2,3 +2,14 @@
 .pay-page{
     
 }
+.header .title{
+    height: 88rpx;
+    line-height: 88rpx;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    height: 88rpx;
+    line-height: 88rpx;
+    justify-content: space-between;
+}

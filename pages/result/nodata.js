@@ -1,4 +1,4 @@
-// pages/order/pay.js
+// pages/result/nodata.js
 Page({
 
   /**
@@ -8,20 +8,6 @@ Page({
 
   },
 
-  payFn(){
-    wx.navigateTo({
-      url: 'confirm',
-      success: function(res){
-        // success
-      },
-      fail: function() {
-        // fail
-      },
-      complete: function() {
-        // complete
-      }
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

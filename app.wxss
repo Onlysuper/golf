@@ -9,7 +9,7 @@
     padding-right: 30rpx;
 }
 page{
-    background: #f8f8f8;
+    background: #F5F5F5;
 }
 .m-border-bottom-1px{
     border-bottom: 1px solid #eee;
@@ -43,12 +43,13 @@ page{
     color:#fff;
 }
 /* 行为相关颜色 */
-.m-color-price{ color:#dd524d}
+.m-color-price{ color:#FF9A13}
 .m-color-active{ color:#007aff}
+.m-color-main{ color:#73C700}
 .m-color-primary{ color:#007aff}
 .m-color-success{ color:#f3a2cc}
 .m-color-warning{ color:#f0ad4e}
-.m-color-error{ color:#dd524d}
+.m-color-error{ color:#FF9A13}
 
 
 /* 背景颜色 */

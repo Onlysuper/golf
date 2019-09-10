@@ -21,7 +21,7 @@ page{height:100%;}
   position: relative;
 }
 .tab-box .line{
-  background: #dd524d;
+  background: #FF9A13;
   height: 4rpx;
   width:30px;
   position: absolute;

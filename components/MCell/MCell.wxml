@@ -1,7 +1,7 @@
 <!--components/MCell/MCell.wxml-->
 <view bindtap="clickTab" class="m-bg-color m-cell {{split?'m-border-bottom-1px':''}}">
   <view class="icon">  
-    <image class="img" mode="aspectFill" src="{{icon}}"></image>
+    <image class="img" mode="aspectFit" src="{{icon}}"></image>
   </view>
   <view class="content m-text-color m-font-size-base">{{title}}</view>
   <view class='link m-text-color-placeholder' hidden="{{!link}}">

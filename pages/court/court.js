@@ -19,7 +19,7 @@ Page({
     
     currentCity:'北京',//当前所在城市
     currentTab: 0,
-    orderLeft:'',
+    orderLeft:0,
     courtList:[
       {
         img:'http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658',
@@ -125,6 +125,8 @@ Page({
     this.closeDialogFn();
   },
   clickTab(e){
+    console.log('点击了');
+    console.log(this.data.currentTab === e.target.dataset.current);
     var that = this;
     if (this.data.currentTab === e.target.dataset.current) {
      return false;
@@ -161,7 +163,9 @@ Page({
   onLoad: function (options) {
     this.defaultDate();
     this.setSchedule()
+    this.changeline()
   },
+  // 日历价钱
   setSchedule(){
     setTimeout(()=>{
       this.calendar.setTodoLabels({

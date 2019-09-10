@@ -1,17 +1,17 @@
 <!--pages/order/pay.wxml-->
-<view class="pay-page">
-    <view class="header">
-        <view class="title">北京CBD</view>
-        <view class="row">
+<view class="pay-page m-font-size-base m-text-color">
+    <view class="header m-bg-color">
+        <view class="title m-font-size-lg page-block">北京CBD</view>
+        <view class="row m-bg-color page-block">
             <view class="label">订单编号</view>
             <view>9084903820940909432</view>
         </view>
-        <view class="row">
+        <view class="row m-bg-color page-block">
             <view class="label">支付金额</view>
             <view>¥800</view>
         </view>
     </view>
-    <view>
-        <button>确认支付</button>
+    <view bindtap="payFn" class="page-button-center">
+        <button>确定支付</button> 
     </view>
 </view>

@@ -1,13 +1,16 @@
 <view class="home-page m-font-size-base m-text-color">
     <!-- 搜索栏 -->
     <view class="page-block home-search m-bg-color">
-        <view class="city"> <text class="iconfont icon-dingwei m-color-price"></text>北京</view>
+        <view class="city"> 
+            <!-- <text class="iconfont icon-location m-color-main"></text> -->
+            北京
+        </view>
         <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
             <icon class="icon" size="15" type="search" />
             <input placeholder="请输入球场名称"/>
         </view>
         <view class="phone">
-            <text class="iconfont icon-dingwei m-color-price"></text>
+            <text class="iconfont icon-dianhua m-color-main"></text> 
         </view>
     </view>
     <view class="place-space"></view>
@@ -17,7 +20,7 @@
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
         <block wx:for="{{imgUrls}}">
             <swiper-item>
-            <image src="{{item}}" class="slide-image m-border-radius-lg" height="150"/>
+            <image lazy-load="{{true}}" src="{{item}}" class="slide-image m-border-radius-lg" height="150"/>
             </swiper-item>
         </block>
         </swiper>
@@ -28,7 +31,7 @@
             <view class="item">
                 <navigator open-type="{{item.url==='/pages/court/court'?'switchTab':'navigateTo'}}" url="{{item.url}}">
                     <view class="pic-box">
-                        <image class="img" mode="aspectFill" src="{{item.icon}}"></image>
+                        <image lazy-load="{{true}}" class="img" mode="aspectFill" src="{{item.icon}}"></image>
                     </view>
                     <text>{{item.label}}</text>
                 </navigator>
@@ -54,36 +57,25 @@
         </view>
         <view class="item">
             <!-- <view class="item-title"><navigator open-type="navigateTo" url="/pages/search/index">深圳云海谷</navigator></view> -->
-            <view class="pro">
-                <navigator open-type="navigateTo" url="/pages/search/index">
-                    <view class="pic">
-                        <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                    </view>
-                    <view class="content m-border-bottom-1pxl">
-                        <view class="label m-font-size-lg">36度假会籍</view>
-                        <view class="text m-text-color-placeholder">
-                            <text class="tip">2019.09.10</text>
-                            <text class="tip">深圳西丽</text>
+           
+            <block wx:for="{{activeList}}">
+                <view class="pro" wx:key="{{index}}">
+                    <navigator open-type="navigateTo" url="/pages/search/index">
+                        <view class="pic pic{{index}}">
+                           <image class="loadImg img {{item.show ? 'active': ''}}" src="{{item.show ? item.img : item.def}}" binderror="errImg" data-err-img="item.img"></image>
+                               <!-- <image lazy-load class="loadImg img" src="{{item.img}}" bindload='onLazyLoad'></image> -->
                         </view>
-                        <view class="text price-box m-font-size-lg">费用：<text class="price m-color-price">¥1900</text></view>
-                    </view>
-                </navigator>
-            </view>
-            <view class="pro">
-                <navigator open-type="navigateTo" url="/pages/search/index">
-                    <view class="pic">
-                        <image class="img" mode="aspectFill" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
-                    </view>
-                    <view class="content m-border-bottom-1pxl">
-                        <view class="label m-font-size-lg">36度假会籍</view>
-                        <view class="text m-text-color-placeholder">
-                            <text class="tip">2019.09.10</text>
-                            <text class="tip">深圳西丽</text>
+                        <view class="content m-border-bottom-1pxl">
+                            <view class="label m-font-size-lg">{{item.label}}</view>
+                            <view class="text m-text-color-placeholder">
+                                <text class="tip">{{item.date}}</text>
+                                <text class="tip">{{item.local}}</text>
+                            </view>
+                            <view class="text price-box m-font-size-lg">费用：<text class="price m-color-price">¥{{item.price}}</text></view>
                         </view>
-                        <view class="text price-box m-font-size-lg">费用：<text class="price m-color-price">¥1900</text></view>
-                    </view>
-                </navigator>
-            </view>
+                    </navigator>
+                </view>
+            </block>
         </view>
    </view>
    
@@ -95,8 +87,8 @@
             <swiper interval="{{interval}}" circular="true" duration="{{duration}}" display-multiple-items="3">
             <block wx:for="{{hotCourts}}">
                 <swiper-item class="m-item">
-                    <view class="slide-image">
-                        <image src="{{item.img}}"  mode="aspectFill"/>
+                    <view class="slide-image slide-image{{index}}">
+                           <image mode="aspectFill" class="loadImg img {{item.show ? 'active': ''}}" src="{{item.show ? item.img : item.def}}"></image>
                     </view>
                     <view class="text">
                         <view class="box">

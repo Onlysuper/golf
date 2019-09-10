@@ -1,4 +1,7 @@
 /* 顶部搜索 :start */
+.pic{
+  background: #f8f8f8;
+}
 .search-box{
     display: flex;
     flex-direction: row;
@@ -77,7 +80,7 @@
     content: "";
     width: 10rpx;
     height: 30rpx;
-    background:#dd524d;
+    background:#FF9A13;
     position: absolute;
     left:0;
     top: 50%;
@@ -91,16 +94,18 @@
 }
 
 /* 中间大按钮 */
-.center-button{
+.page-button-center{
    padding: 30rpx;
 }
-.center-button button{
+.page-button-center button{
     border: 0px;
     background: transparent;
     font-size: 32rpx;
     background: #007aff;
     color:#fff;
 }
-.center-button button::after{
+/* 中间大按钮 */
+.page-button-center button::after{
     border: 0;
 }
+

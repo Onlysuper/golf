@@ -2,7 +2,7 @@ export default{
     GET:function(url,data){
         return new Promise(function(resolve, reject){
              wx.request({
-                url:"http://easy-mock.laomengx.com/mock/5cac4e7b3e94b50da7d7c5d6"+url,
+               url:"https://mockapi.eolinker.com/W9pfdKi1123f3578dab43110e74d041ede620d3a9e12cac"+url,
                 data:data,
                 header:{
                     'content-type': 'application/json' // 默认值
@@ -19,22 +19,22 @@ export default{
         })
     },
     POST:function(url,data){
-        return new Promise(function(resolve, reject){
-             wx.request({
-                url:url,
-                data:data,
-                header:{
-                    
-                },
-                method:"POST",
-                dataType:"json",//返回的数据格式
-                success:function(res){
-                    resolve(res)
-                },
-                fail:function(err){
-                    reject(err)
-                }
-            })
+      return new Promise(function (resolve, reject) {
+        wx.request({
+          url: "https://mockapi.eolinker.com/W9pfdKi1123f3578dab43110e74d041ede620d3a9e12cac" + url,
+          data: data,
+          header: {
+            'content-type': 'application/x-www-form-urlencoded' // 默认值
+          },
+          method: "POST",
+          dataType: "json",//返回的数据格式
+          success: function (res) {
+            resolve(res)
+          },
+          fail: function (err) {
+            reject(err)
+          }
         })
+      })
     }
 }

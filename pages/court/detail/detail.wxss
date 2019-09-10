@@ -94,7 +94,7 @@ justify-content:center;
 
 }
 .time-interval .price-box .item .but{
-    background: #dd524d;
+    background: #FF9A13;
     color:#fff;
     white-space: nowrap;
     border-radius: 24rpx;

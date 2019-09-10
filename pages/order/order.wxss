@@ -25,7 +25,7 @@
     color: #8f9193;
    }
    .active{
-    color: #dd524d
+    color: #FF9A13
    }
    .content{
     padding-top: 100rpx;

@@ -8,9 +8,9 @@
             <view class="item-r m-text-color-placeholder m-font-size-base">  更多资料<text class="iconfont icon-gengduo"></text></view>
         </view>
     </view>
-    <mcell bind:clickTab="clickTab" index="information" title="编辑资料" link="{{true}}" split="{{true}}" icon="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></mcell>
-    <mcell bind:clickTab="clickTab" index="password" title="修改密码" link="{{true}}" split="{{false}}" icon="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></mcell>
-    <view class="center-button" style="margin-top:20rpx">
+    <mcell bind:clickTab="clickTab" index="information" title="编辑资料" link="{{true}}" split="{{true}}" icon="/imgs/user/edit.png"></mcell>
+    <mcell bind:clickTab="clickTab" index="password" title="修改密码" link="{{true}}" split="{{false}}" icon="/imgs/user/password.png"></mcell>
+    <view class="page-button-center" style="margin-top:20rpx">
         <button>退出登录</button>
     </view>
 </view>

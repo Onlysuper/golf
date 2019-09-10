@@ -1,7 +1,7 @@
 <view class="user-pages">
     <view class="user-box page-block m-bg-color">
         <view class="img">
-            <image class="img" mode="aspectFull" src="http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658"></image>
+            <image class="img" mode="aspectFull" src="/imgs/user/head-img.png"></image>
         </view>
         <view class="phone">
             <text class="phone m-font-size-lg">176****2360</text>

@@ -12,11 +12,14 @@
         </view>
         <view class="tab-box">
             <view class="item local" bindtap="localUrl">
-                <view class="m-text-color-placeholder">区域</view>
+                <view class="label-box m-text-color-placeholder">
+                    <text class="iconfont icon-quyu"></text><text>区域</text>
+                </view>
                 <view class="line-split">{{currentCity}} <text class="iconfont icon-xiangxiajiantou m-font-size-sm"></text></view>
             </view>
             <view class="item date" bindtap="openDialog">
-                <view class="m-text-color-placeholder">开球日期</view>
+                <view class="label-box m-text-color-placeholder">
+                        <text class="iconfont icon-icon"></text>开球日期</view>
                 <view>{{date.month}}月{{date.day}}日 周{{date.week}} <text class="iconfont icon-xiangxiajiantou m-font-size-sm"></text></view>
             </view>
         </view>

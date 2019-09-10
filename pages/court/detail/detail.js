@@ -55,6 +55,21 @@ Page({
     this.defaultDate();
     this.setSchedule()
   },
+  // 查看位置
+  goMap(){
+    wx.navigateTo({
+      url: '/pages/map/map',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+  },
   // 选择开球时间
   choseTime(e){
     let time = e.target.dataset.current;

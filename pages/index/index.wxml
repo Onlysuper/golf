@@ -26,7 +26,7 @@
         </swiper>
     </view>
     <!-- 选项栏目 -->
-   <view class="page-block home-gride m-bg-color m-top-base">
+   <view class="page-block home-gride m-bg-color">
         <block wx:for="{{grideList}}">
             <view class="item">
                 <navigator open-type="{{item.url==='/pages/court/court'?'switchTab':'navigateTo'}}" url="{{item.url}}">
@@ -52,7 +52,7 @@
             <text>最新活动</text>
             <view class="icon-r m-text-color-placeholder">
                 <text class="item">更多</text>
-                <text class="item-r" class="iconfont icon-gengduo"></text>
+                <text class="item-r iconfont icon-gengduo"></text>
             </view>
         </view>
         <view class="item">

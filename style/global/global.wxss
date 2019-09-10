@@ -101,9 +101,9 @@
     border: 0px;
     background: transparent;
     font-size: 32rpx;
-    background: #007aff;
+    background: #73C700;
     color:#fff;
-}
+} 
 /* 中间大按钮 */
 .page-button-center button::after{
     border: 0;

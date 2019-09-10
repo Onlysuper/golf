@@ -6,7 +6,7 @@
 // }).catch(err=>{
 //   console.log(err)
 // })
-// const app = getApp();
+const app = getApp();
 // 设置函数防抖
 const debounce = (fn, delay = 300) => {
   let ctx,
@@ -30,6 +30,8 @@ const debounce = (fn, delay = 300) => {
 Page({
   data: {
     height: '', // 获取当前页面的可视高度
+    // 此页面 页面内容距最顶部的距离
+    winHeight: app.globalData.height * 2 + 20,  
     //banner
     imgUrls: [
       'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',

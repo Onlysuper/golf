@@ -2,5 +2,6 @@
   "usingComponents": {
     "calendar": "/components/calendar/index"
   },
-  "navigationBarTitleText": "订场"
+  "navigationBarTitleText": "订场",
+  "navigationStyle":"default"
 }

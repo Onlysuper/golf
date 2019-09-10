@@ -1,4 +1,5 @@
-<view class="home-page m-font-size-base m-text-color">
+<!-- <navigationBar title="{{title}}" loading="{{true}}" home="{{true}}" back="{{true}}"></navigationBar> -->
+<view style='margin-top: {{winHeight}}px' class="home-page m-font-size-base m-text-color">
     <!-- 搜索栏 -->
     <view class="page-block home-search m-bg-color">
         <view class="city"> 

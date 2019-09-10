@@ -1,4 +1,15 @@
 {
+  "usingComponents": {
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "高尔夫",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "navigationStyle":"default"
+  },
   "pages": [
     "pages/index/index",
     "pages/search/index",
@@ -55,11 +66,6 @@
       }
     ]
   },
-  "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle": "black"
-  },
+  
   "sitemapLocation": "sitemap.json"
 }

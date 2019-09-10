@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "高尔夫"
+  "navigationBarTitleText": "高尔夫",
+  "navigationStyle":"default"
 }

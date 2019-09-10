@@ -1,6 +1,11 @@
 @import 'style/weui.wxss';
 @import 'style/icon/icon.wxss';
 @import 'style/global/global.wxss';
+pages {
+  position: relative;
+  z-index: 9999998;
+  background: #fff;
+}
 .weui-half-screen-dialog{
     padding: 0;
 }

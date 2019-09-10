@@ -5,6 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    data: {
+        loading: false,
+        color: '#000',
+        background: '#000',
+        show: true,
+        animated: true
+    },
     markers: [{
       iconPath: "/resources/others.png",
       id: 0,

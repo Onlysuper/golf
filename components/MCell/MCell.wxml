@@ -1,5 +1,5 @@
 <!--components/MCell/MCell.wxml-->
-<view bindtap="clickTab" class="m-bg-color m-cell {{split?'m-border-bottom-1px':''}}">
+<view hover-class="navigator-hover" bindtap="clickTab" class="m-bg-color m-cell {{split?'m-border-bottom-1px':''}}">
   <view class="icon">  
     <image class="img" mode="aspectFit" src="{{icon}}"></image>
   </view>

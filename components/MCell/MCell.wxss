@@ -8,6 +8,7 @@
   align-items:center;
   color:#808080;
 }
+
 /* .m-cell.split-blod{ */
 /* border-top: 10rpx solid #f8f8f8;
 border-bottom: 10rpx solid #f8f8f8; */

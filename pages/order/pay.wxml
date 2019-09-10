@@ -12,6 +12,6 @@
         </view>
     </view>
     <view bindtap="payFn" class="page-button-center">
-        <button>确定支付</button> 
+        <button hover-class="navigator-hover">确定支付</button> 
     </view>
 </view>

@@ -5,13 +5,14 @@
         </view>
         <view class="phone">
             <text class="phone m-font-size-lg">176****2360</text>
-            <view class="item-r m-text-color-placeholder m-font-size-base">  更多资料<text class="iconfont icon-gengduo"></text></view>
+            <view hover-class="navigator-hover" class="item-r m-text-color-placeholder m-font-size-base">  更多资料<text class="iconfont icon-gengduo"></text></view>
         </view>
     </view>
     <mcell bind:clickTab="clickTab" index="information" title="编辑资料" link="{{true}}" split="{{true}}" icon="/imgs/user/edit.png"></mcell>
     <mcell bind:clickTab="clickTab" index="password" title="修改密码" link="{{true}}" split="{{false}}" icon="/imgs/user/password.png"></mcell>
     <view class="page-button-center" style="margin-top:20rpx">
-        <button>退出登录</button>
+        <button hover-class="navigator-hover">退出登录</button>
     </view>
 </view>
 
+ 

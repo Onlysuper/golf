@@ -97,6 +97,10 @@
 .page-button-center{
    padding: 30rpx;
 }
+.page-but{
+background: #73C700;
+color:#fff;
+}
 .page-button-center button{
     border: 0px;
     background: transparent;

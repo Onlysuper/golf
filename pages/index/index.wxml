@@ -50,7 +50,7 @@
     <view class="page-block home-hot-sell m-bg-color m-top-base">
         <view class="page-title">
             <text>最新活动</text>
-            <view class="icon-r m-text-color-placeholder">
+            <view hover-class="navigator-hover" class="icon-r m-text-color-placeholder">
                 <text class="item">更多</text>
                 <text class="item-r iconfont icon-gengduo"></text>
             </view>
@@ -81,7 +81,13 @@
    
    <!-- 热门球场 -->
    <view class="page-block home-block m-bg-color m-top-base">
-        <view class="page-title">热门球场</view>
+        <view class="page-title">
+            <text>热门球场</text>
+            <view hover-class="navigator-hover" class="icon-r m-text-color-placeholder">
+                <text class="item">更多</text>
+                <text class="item-r iconfont icon-gengduo"></text>
+            </view>
+        </view>
         <view class="hot-scrow">
             <!-- <swiper interval="{{interval}}" circular="true" duration="{{duration}}"  previous-margin="50rpx" next-margin="50rpx"> -->
             <swiper interval="{{interval}}" circular="true" duration="{{duration}}" display-multiple-items="3">

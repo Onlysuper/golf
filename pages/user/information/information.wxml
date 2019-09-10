@@ -29,7 +29,7 @@
         <view class="text"><input placeholder="请输入姓名"/></view>
     </view>
     <view class="page-button-center" style="margin-top:20rpx">
-        <button>提交更新</button>
+        <button hover-class="navigator-hover">提交更新</button>
     </view>
 </view>
 

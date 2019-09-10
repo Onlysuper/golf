@@ -1,5 +1,5 @@
 <view class="service-page">
-    <view class="m-bg-color m-cell m-border-bottom-1px">
+    <view hover-class="navigator-hover" class="m-bg-color m-cell m-border-bottom-1px">
         <view class="icon">  
             <image class="img" mode="aspectFit" src="/imgs/user/line-service.png"></image>
         </view>
@@ -11,7 +11,7 @@
             <text class="iconfont icon-gengduo"></text>
         </view>
     </view>
-    <view  bindtap="callPhone" data-phone="17600802360" class="m-bg-color m-cell">
+    <view hover-class="navigator-hover" bindtap="callPhone" data-phone="17600802360" class="m-bg-color m-cell">
         <view class="icon">  
             <image class="img" mode="aspectFit" src="/imgs/user/call.png"></image>
         </view>

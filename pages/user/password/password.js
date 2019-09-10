@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    butText:"获取验证码",
+    disabled:false,
     sexArr:[
       {
        id:0,
@@ -17,6 +19,29 @@ Page({
     ],
     birthday:"",
     sex:""
+  },
+  // 获取验证码
+  yzmClick(){
+    var num = 0;
+    var leng = 60; // 60秒
+    var time = setInterval(()=>{
+      this.setData({
+        disabled:true
+      })
+      this.setData({
+        butText:"重新获取"+num
+      })
+      if(num===leng){
+        clearInterval(time);
+        this.setData({
+          disabled:false
+        })
+        this.setData({
+          butText:"重新获取"
+        })
+      }
+      num++;
+    },1000)
   },
   // 选择性别
   bindSexChange:function(e){

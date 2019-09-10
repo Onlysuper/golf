@@ -64,7 +64,7 @@ Page({
       {
         img:"http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label:"36度假会籍",
         local:"深圳西丽",
         date:"2019.09.10",
@@ -74,7 +74,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -84,7 +84,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -94,7 +94,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -104,7 +104,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -114,7 +114,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -124,7 +124,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -134,7 +134,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -144,7 +144,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -154,7 +154,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -164,7 +164,7 @@ Page({
       {
         img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
         show: false,
-        def: "/imgs/load-img.png",
+        def: "/imgs/load-img.gif",
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
@@ -182,84 +182,84 @@ Page({
         content:'巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img:'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title:"江西巴拉巴",
         content:'巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img:'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title:"江西巴拉巴",
         content:'巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img:'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       },
       {
         title: "江西巴拉巴",
         content: '巴拉班巴巴啧啧啧啧啧啧做做做做做做做做做做',
         img: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
         show: false,
-        def: "/imgs/load-img.png"
+        def: "/imgs/load-img.gif"
       }
     ]
   },
@@ -278,7 +278,7 @@ Page({
     var _errImg = e.target.dataset.errImg;
     // var _objImg = "'" + _errImg + "'";
     // var _errObj = {};
-    // _errObj[_errImg] = "/imgs/load-img.png";
+    // _errObj[_errImg] = "/imgs/load-img.gif";
     // console.log(e.detail.errMsg + "----" + _errObj[_errImg] + "----" + _objImg);
     // this.setData(_errObj);//注意这里的赋值方式...  
   },

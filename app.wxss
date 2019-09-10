@@ -11,6 +11,10 @@
 page{
     background: #F5F5F5;
 }
+.navigator-hover{
+    opacity: 0.5;
+    background: none;
+}
 .m-border-bottom-1px{
     border-bottom: 1px solid #eee;
 }

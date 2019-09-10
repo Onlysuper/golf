@@ -84,7 +84,7 @@ Page({
   },
   closeOrderDialog(){
     this.setData({
-      orderDialog: true
+      orderDialog: false
     })
   },
   // 设置日历价格

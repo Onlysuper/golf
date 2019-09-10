@@ -27,7 +27,7 @@
                         </view>
                         <view class="operation">
                             <view class="but-box">
-                                <view bindtap="signSub" class="but m-but-color-base">报名</view>
+                                <view bindtap="signSub" class="but page-but">报名</view>
                                 <view class="m-text-color-placeholder m-font-size-sm">余44位</view>
                             </view>
                         </view>

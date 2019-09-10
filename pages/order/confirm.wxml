@@ -46,6 +46,6 @@
             <text>订单金额：</text>
             <text class="m-color-price m-font-size-lg">¥800</text>
         </view>
-        <view bindtap="confirmSubmit" class="but m-but-color-base">提交订单</view>
+        <view bindtap="confirmSubmit" class="but page-but">提交订单</view>
     </view>
 </view>

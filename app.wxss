@@ -41,11 +41,7 @@ page{
 .m-text-color-placeholder{ color:#808080}
 .m-text-color-disable{color:#c0c0c0}
 
-/* 按钮颜色 */
-.m-but-color-base{
-    background: #007aff;
-    color:#fff;
-}
+
 /* 行为相关颜色 */
 .m-color-price{ color:#FF9A13}
 .m-color-active{ color:#007aff}

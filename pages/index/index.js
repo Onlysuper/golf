@@ -78,7 +78,17 @@ Page({
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
-        price: "¥1900",
+        price: "1900",
+        url: ''
+      },
+      {
+        img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
+        show: false,
+        def: "/imgs/load-img.gif",
+        label: "36度假会籍",
+        local: "深圳西丽",
+        date: "2019.09.10",
+        price: "1900",
         url: ''
       },
       {
@@ -108,7 +118,17 @@ Page({
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
-        price: "¥1900",
+        price: "1900",
+        url: ''
+      },
+      {
+        img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
+        show: false,
+        def: "/imgs/load-img.gif",
+        label: "36度假会籍",
+        local: "深圳西丽",
+        date: "2019.09.10",
+        price: "1900",
         url: ''
       },
       {
@@ -138,37 +158,7 @@ Page({
         label: "36度假会籍",
         local: "深圳西丽",
         date: "2019.09.10",
-        price: "¥1900",
-        url: ''
-      },
-      {
-        img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
-        show: false,
-        def: "/imgs/load-img.gif",
-        label: "36度假会籍",
-        local: "深圳西丽",
-        date: "2019.09.10",
         price: "1900",
-        url: ''
-      },
-      {
-        img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
-        show: false,
-        def: "/imgs/load-img.gif",
-        label: "36度假会籍",
-        local: "深圳西丽",
-        date: "2019.09.10",
-        price: "1900",
-        url: ''
-      },
-      {
-        img: "http://hbimg.b0.upaiyun.com/75cdb7cfd53c1eeead7f5333e673e9e669e456d5752e-RNtNWd_fw658",
-        show: false,
-        def: "/imgs/load-img.gif",
-        label: "36度假会籍",
-        local: "深圳西丽",
-        date: "2019.09.10",
-        price: "¥1900",
         url: ''
       }
     ],

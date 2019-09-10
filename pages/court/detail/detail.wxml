@@ -27,7 +27,7 @@
                 <text class="label m-text-color-placeholder m-font-size-base">会员价</text>
                 <text class="price m-color-price m-font-size-lg">¥980</text>
                 <view class="but-box">
-                    <view bindtap="openTimeDialog" class="but m-font-size-sm">预订</view>
+                    <view hover-class="navigator-hover" bindtap="openTimeDialog" class="but m-font-size-sm">预订</view>
                 </view>
             </view>
             <view class="page-block item">
@@ -92,11 +92,11 @@
 
     <!-- 选择开球时间 开始 -->
     <view class="weui-demo-dialog {{timeDialog ? 'weui-demo-dialog_show' : ''}}">
-        <view class="weui-mask" bindtap="closeDialog"></view>
+        <view class="weui-mask" bindtap="closeTimeDialog"></view>
         <view class="weui-half-screen-dialog" catchtap="stopEvent">
             <view class="weui-half-screen-dialog__hd">
             <view class="weui-half-screen-dialog__hd__side">
-                <view bindtap="closeDialogFn" class="weui-icon-btn weui-icon-btn_close">关闭</view>
+                <view bindtap="closeTimeDialog" class="weui-icon-btn weui-icon-btn_close">关闭</view>
             </view>
             <view class="weui-half-screen-dialog__hd__main">
                 <text class="weui-half-screen-dialog__title">选择开球时间</text>
@@ -123,11 +123,11 @@
     </view>
     <!-- 预订窗口 start-->
     <view class="weui-demo-dialog {{orderDialog ? 'weui-demo-dialog_show' : ''}}">
-        <view class="weui-mask" bindtap="closeDialog"></view>
+        <view class="weui-mask" bindtap="closeOrderDialog"></view>
         <view class="weui-half-screen-dialog" catchtap="stopEvent">
             <view class="weui-half-screen-dialog__hd">
             <view class="weui-half-screen-dialog__hd__side">
-                <view bindtap="closeDialogFn" class="weui-icon-btn weui-icon-btn_close">关闭</view>
+                <view bindtap="closeOrderDialog" class="weui-icon-btn weui-icon-btn_close">关闭</view>
             </view>
             <view class="weui-half-screen-dialog__hd__main">
                 <text class="weui-half-screen-dialog__title">预订信息</text>
@@ -165,7 +165,7 @@
             </scroll-view>
             <view class="footer m-border-top-1px">
                 <view class="icon-box">分享</view>
-                <view class="but-box m-but-color-base">预订</view>
+                <view class="but-box page-but">预订</view>
             </view>
             </view>
         </view>

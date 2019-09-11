@@ -56,17 +56,17 @@
     <view class="page-block home-hot-sell m-bg-color m-top-base">
         <view class="page-title">
             <text>最新活动</text>
-            <view hover-class="navigator-hover" class="icon-r m-text-color-placeholder">
+            <navigator open-type="navigateTo" url="/pages/activity/activity" class="icon-r m-text-color-placeholder">
                 <text class="item">更多</text>
                 <text class="item-r iconfont icon-gengduo"></text>
-            </view>
+            </navigator>
         </view>
         <view class="item">
             <!-- <view class="item-title"><navigator open-type="navigateTo" url="/pages/search/index">深圳云海谷</navigator></view> -->
            
             <block wx:for="{{activeList}}">
                 <view class="pro" wx:key="{{index}}">
-                    <navigator open-type="navigateTo" url="/pages/search/index">
+                    <navigator open-type="navigateTo" url="/pages/order/confirm">
                         <view class="pic pic{{index}}">
                            <image-loader class="loadImg img {{item.show ? 'active': ''}}"  default-image='/imgs/load-img.gif' original-image="{{item.img}}" />
 
@@ -95,29 +95,31 @@
    <view class="page-block home-block m-bg-color m-top-base">
         <view class="page-title">
             <text>热门球场</text>
-            <view hover-class="navigator-hover" class="icon-r m-text-color-placeholder">
+            <navigator open-type="switchTab" url="/pages/court/court" class="icon-r m-text-color-placeholder">
                 <text class="item">更多</text>
                 <text class="item-r iconfont icon-gengduo"></text>
-            </view>
+            </navigator>
         </view>
         <view class="hot-scrow">
             <!-- <swiper interval="{{interval}}" circular="true" duration="{{duration}}"  previous-margin="50rpx" next-margin="50rpx"> -->
             <swiper interval="{{interval}}" circular="true" duration="{{duration}}" display-multiple-items="3">
             <block wx:for="{{hotCourts}}">
                 <swiper-item class="m-item">
-                    <view class="slide-image slide-image{{index}}">
-                     <image-loader class="loadImg img {{item.show ? 'active': ''}}"  default-image='/imgs/load-img.gif' original-image="{{item.img}}" />
-                           <!-- <image mode="aspectFill" class="loadImg img {{item.show ? 'active': ''}}" src="{{item.show ? item.img : item.def}}"></image> -->
-                    </view>
-                    <view class="text">
-                        <view class="box">
-                            <view class="label">{{item.title}}</view>
-                            <view class="content m-font-size-sm m-text-color-placeholder">{{item.content}}</view>
+                    <navigator open-type="navigateTo" url="/pages/court/detail/detail">
+                        <view class="slide-image slide-image{{index}}">
+                        <image-loader class="loadImg img {{item.show ? 'active': ''}}"  default-image='/imgs/load-img.gif' original-image="{{item.img}}" />
+                            <!-- <image mode="aspectFill" class="loadImg img {{item.show ? 'active': ''}}" src="{{item.show ? item.img : item.def}}"></image> -->
                         </view>
-                        <!-- <view class="price">
-                            <text class="tip m-bg-color-grey m-color-price m-font-size-lg m-border-radius-lg">¥2688</text>
-                        </view> -->
-                    </view>
+                        <view class="text">
+                            <view class="box">
+                                <view class="label">{{item.title}}</view>
+                                <view class="content m-font-size-sm m-text-color-placeholder">{{item.content}}</view>
+                            </view>
+                            <!-- <view class="price">
+                                <text class="tip m-bg-color-grey m-color-price m-font-size-lg m-border-radius-lg">¥2688</text>
+                            </view> -->
+                        </view>
+                    </navigator>
                 </swiper-item>
             </block>
             </swiper>

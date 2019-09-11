@@ -1,6 +1,5 @@
 {
-  "usingComponents": {
-  },
+  "usingComponents": {},
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
@@ -8,7 +7,7 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": false,
-    "navigationStyle":"default"
+    "navigationStyle": "default"
   },
   "pages": [
     "pages/index/index",
@@ -28,7 +27,9 @@
     "pages/user/information/information",
     "pages/result/404",
     "pages/result/nodata",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/trip/trip",
+    "pages/race/race"
   ],
   "tabBar": {
     "color": "#8E8E93",
@@ -66,6 +67,5 @@
       }
     ]
   },
-  
   "sitemapLocation": "sitemap.json"
 }

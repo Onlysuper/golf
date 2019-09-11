@@ -54,12 +54,12 @@ Page({
       {
         label:'行程',
         icon: '/imgs/gride/3.png',
-        url:'/pages/court/court'
+        url:'/pages/trip/trip'
       },
       {
         label:'赛事',
         icon: '/imgs/gride/4.png',
-        url:'/pages/court/court'
+        url:'/pages/race/race'
       }
     ],
     // 最新活动
@@ -268,7 +268,6 @@ Page({
     // this.showImg()
   },
   onShow: function(){
-    console.log('首页哦');
     this.defaultCity();
   },
   localUrl: function(){

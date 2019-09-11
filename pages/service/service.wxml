@@ -13,7 +13,7 @@
     </view>
     <view hover-class="navigator-hover" bindtap="callPhone" data-phone="17600802360" class="m-bg-color m-cell">
         <view class="icon">  
-            <image class="img" mode="aspectFit" src="/imgs/user/call.png"></image>
+            <image class="img" mode="aspectFit" src="/imgs/user/call.png"></image> 
         </view>
         <view class="content m-text-color m-font-size-base">电话咨询</view>
         <view class='link m-text-color-placeholder'>

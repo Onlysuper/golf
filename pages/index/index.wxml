@@ -2,15 +2,15 @@
 <view style='margin-top: {{winHeight}}px' class="home-page m-font-size-base m-text-color">
     <!-- 搜索栏 -->
     <view class="page-block home-search m-bg-color">
-        <view class="city"> 
+        <view class="city" bindtap="localUrl"> 
             <!-- <text class="iconfont icon-location m-color-main"></text> -->
-            北京
+            {{currentCity}}
         </view>
         <view bindtap="search" class="input-box m-bg-color-grey m-spacing-sm m-border-radius-lg">
             <icon class="icon" size="15" type="search" />
             <input placeholder="请输入球场名称"/>
         </view>
-        <view class="phone">
+        <view hover-class="navigator-hover" bindtap="callPhone" data-phone="17600802360" class="phone">
             <text class="iconfont icon-dianhua m-color-main"></text> 
         </view>
     </view>

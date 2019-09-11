@@ -53,15 +53,31 @@ Page({
   },
   //监听传值，后面自己做处理了
   cityTap(e){
+    // const cityName=e.detail.cityname;
+    // var pages = getCurrentPages();
+    // var currPage = pages[pages.length - 1];   //当前页面
+    // var prevPage = pages[pages.length - 2];  //上一个页面
+    // prevPage.setData({
+    //   currentCity: cityName
+    // })
+    // wx.navigateBack();
+
+    // 储存到缓存里
     const cityName=e.detail.cityname;
-    console.log(cityName);
-    var pages = getCurrentPages();
-    var currPage = pages[pages.length - 1];   //当前页面
-    var prevPage = pages[pages.length - 2];  //上一个页面
-    prevPage.setData({
-      currentCity: cityName
+    wx.setStorage({
+      key: 'cityName',
+      data: cityName,
+      success: function(res){
+        // success
+        wx.navigateBack();
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
     })
-    wx.navigateBack();
   },
 // 跳转到国际
 countryUrl(){

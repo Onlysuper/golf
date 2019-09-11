@@ -29,6 +29,7 @@ const debounce = (fn, delay = 300) => {
 
 Page({
   data: {
+    currentCity:"",
     height: '', // 获取当前页面的可视高度
     // 此页面 页面内容距最顶部的距离
     winHeight: app.globalData.height * 2 + 20,  
@@ -263,7 +264,43 @@ Page({
         })
       },
     })
+    this.defaultCity();
     // this.showImg()
+  },
+  onShow: function(){
+    console.log('首页哦');
+    this.defaultCity();
+  },
+  localUrl: function(){
+    wx.navigateTo({
+      url:"/pages/city/city"
+    })
+  },
+  // 默认的城市
+  defaultCity(){
+    // currentCity
+    let that = this;
+    wx.getStorage({
+      key: 'cityName',
+      success: function(res){
+        that.setData({
+          currentCity: res.data
+        })
+      },
+      fail: function() {
+        // fail
+        console.log('获取失败')
+      },
+      complete: function() {
+        // complete
+      }
+    })
+  },
+  callPhone(e){
+    let phone= e.currentTarget.dataset.phone
+    wx.makePhoneCall({
+      phoneNumber:phone
+    })
   },
   outputSrc(){
     console.log(123);

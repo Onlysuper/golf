@@ -149,9 +149,7 @@ Page({
      })
     })
    },
-  
-  
-
+  // 跳转到区域选择页面
   localUrl: function(){
     wx.navigateTo({
       url:"/pages/city/city"
@@ -161,9 +159,30 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.defaultCity();
     this.defaultDate();
     this.setSchedule()
     this.changeline()
+  },
+  // 默认的城市
+  defaultCity(){
+    // currentCity
+    let that = this;
+    wx.getStorage({
+      key: 'cityName',
+      success: function(res){
+        that.setData({
+          currentCity: res.data
+        })
+      },
+      fail: function() {
+        // fail
+        console.log('获取失败')
+      },
+      complete: function() {
+        // complete
+      }
+    })
   },
   // 日历价钱
   setSchedule(){
@@ -258,7 +277,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log('这里哦');
+    this.defaultCity();
   },
 
   /**

@@ -5,13 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    data: {
-        loading: false,
-        color: '#000',
-        background: '#000',
-        show: true,
-        animated: true
-    },
+    // 顶部导航
+    loading: true,
+    title:"球场位置",
+    color: '#000',
+    background: '#000',
+    show: true,
+    animated: true,
+    // 顶部导航end
     markers: [{
       iconPath: "/resources/others.png",
       id: 0,

@@ -1,6 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "navigationBar": "../../components/navigation-bar/navigation-bar"
+  },
   "navigationBarTitleText": "球场导航",
-  "navigationStyle":"custom",
-  "navigationBar": "../../components/navigation-bar/navigation_bar"
+  "navigationStyle":"custom"
 }

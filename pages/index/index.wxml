@@ -17,14 +17,19 @@
     <view class="place-space"></view>
     <!-- 轮播图 -->
     <view class="m-bg-color page-block home-banner "> 
-        <swiper indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}">
-            <swiper-item>
-            <image lazy-load="{{true}}" src="{{item}}" class="slide-image m-border-radius-lg" height="150"/>
-            </swiper-item>
-        </block>
-        </swiper>
+            <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image-loader
+                    default-image='/imgs/load-img.gif'
+                    original-image="{{item}}"
+                    mode='aspectFill' 
+                    bindload="outputSrc" class="slide-image" height="100%" width="100%" class="m-border-radius-lg"/>
+                    <!-- <image bindload="outputSrc" lazy-load="{{true}}" src="{{item}}" class="slide-image m-border-radius-lg" height="150"/> -->
+                </swiper-item>
+            </block>
+            </swiper>
     </view>
     <!-- 选项栏目 -->
    <view class="page-block home-gride m-bg-color">
@@ -63,7 +68,13 @@
                 <view class="pro" wx:key="{{index}}">
                     <navigator open-type="navigateTo" url="/pages/search/index">
                         <view class="pic pic{{index}}">
-                           <image class="loadImg img {{item.show ? 'active': ''}}" src="{{item.show ? item.img : item.def}}" binderror="errImg" data-err-img="item.img"></image>
+                           <image-loader class="loadImg img {{item.show ? 'active': ''}}"  default-image='/imgs/load-img.gif' original-image="{{item.img}}" />
+
+                             <!-- <image-loader
+        default-image='/imgs/load-img.gif'
+        original-image="{{item}}"
+        mode='widthFix' 
+        bindload="outputSrc" lazy-load="{{true}}" class="slide-image m-border-radius-lg" height="150"/> -->
                                <!-- <image lazy-load class="loadImg img" src="{{item.img}}" bindload='onLazyLoad'></image> -->
                         </view>
                         <view class="content m-border-bottom-1pxl">
@@ -72,7 +83,7 @@
                                 <text class="tip">{{item.date}}</text>
                                 <text class="tip">{{item.local}}</text>
                             </view>
-                            <view class="text price-box m-font-size-lg">费用：<text class="price m-color-price">¥{{item.price}}</text></view>
+                            <view class="text price-box m-font-size-base">费用：<text class="price m-color-price m-font-size-lg">¥{{item.price}}</text></view>
                         </view>
                     </navigator>
                 </view>
@@ -95,7 +106,8 @@
             <block wx:for="{{hotCourts}}">
                 <swiper-item class="m-item">
                     <view class="slide-image slide-image{{index}}">
-                           <image mode="aspectFill" class="loadImg img {{item.show ? 'active': ''}}" src="{{item.show ? item.img : item.def}}"></image>
+                     <image-loader class="loadImg img {{item.show ? 'active': ''}}"  default-image='/imgs/load-img.gif' original-image="{{item.img}}" />
+                           <!-- <image mode="aspectFill" class="loadImg img {{item.show ? 'active': ''}}" src="{{item.show ? item.img : item.def}}"></image> -->
                     </view>
                     <view class="text">
                         <view class="box">

@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "image-loader": "/components/image-loader/image-loader"
+  },
   "navigationBarTitleText": "高尔夫",
+  
   "navigationStyle":"default"
 }

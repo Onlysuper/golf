@@ -263,9 +263,11 @@ Page({
         })
       },
     })
-    this.showImg()
+    // this.showImg()
   },
-
+  outputSrc(){
+    console.log(123);
+  },
   errImg: function (e) {
     var _errImg = e.target.dataset.errImg;
     // var _objImg = "'" + _errImg + "'";

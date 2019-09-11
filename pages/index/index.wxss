@@ -50,6 +50,10 @@
     height: 100%;
     overflow: hidden;
     background: #f8f8f8;
+    border-radius: 12rpx;
+}
+.home-banner image{
+    border-radius: 12rpx;
 }
 
 /* 选项卡 */
@@ -198,7 +202,7 @@
    margin-right: 20rpx;
 }
 .home-hot-sell .price-box .price{
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .home-hot-sell .item .text .tip:last-of-type{
     margin-right: 0;
@@ -248,7 +252,7 @@
 
 /* 图片懒加载 */
 loadImg.image{
-    transition: all .3s ease;
+    transition: all .2s ease;
     /* transition: all .5s ease-in-out; */
     opacity: 0;
 }
